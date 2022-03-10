@@ -1,0 +1,45 @@
+@startuml Class Diagram
+class Player {
+
+}
+
+class Game {
+    Integer time
+    Player player
+    void setup()
+}
+
+class Tile {
+    String tile_name
+    void __init__(self)
+}
+
+class EvilTempleBehaviour {
+
+}
+
+class GraveyardBehaviour {
+
+}
+
+class GardenBehaviour {
+
+}
+
+class KitchenBehaviour {
+
+}
+
+class DefaultBehaviour {
+
+}
+
+Tile <|-- DefaultBehaviour
+Tile <|-- EvilTempleBehaviour
+Tile <|-- GraveyardBehaviour
+Tile <|-- GardenBehaviour
+Tile <|-- KitchenBehaviour
+
+
+class Card
+@enduml
