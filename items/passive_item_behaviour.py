@@ -1,7 +1,7 @@
 from abstract_item_behaviour import AbstractItemBehaviour
 
 
-class CanOfSodaBehaviour(AbstractItemBehaviour):
+class PassiveItemBehaviour(AbstractItemBehaviour):
 
     def action(self):
         pass

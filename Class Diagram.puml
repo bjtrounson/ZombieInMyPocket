@@ -1,4 +1,5 @@
 @startuml Class Diagram
+skinparam groupInheritance 3
 
 class Game {
     Integer time
@@ -18,7 +19,8 @@ class Game {
 class Player {
     Integer health
     Integer attack
-    Item[]
+    Item[] player_items
+    void __init__(self, health, attack, player_items)
 }
 
 enum MoveType {
@@ -26,92 +28,99 @@ enum MoveType {
     PreviousRoom
 }
 
-class Tile {
-    String tile_name
-    void __init__(self)
+Game *-- Player
+Game *-- Card
+Game *-- Tile
+Game *-- MoveType
+Player *-- Item
+
+package tiles <<Folder>> #DDDDDD {
+    class Tile {
+        String tile_name
+        AbstractTileBehaviour tile_behaviour
+    }
+
+    abstract class AbstractTileBehaviour {
+        void action()
+    }
+
+    class EvilTempleBehaviour extends AbstractTileBehaviour {
+        void action()
+    }
+
+    class GraveyardBehaviour extends AbstractTileBehaviour {
+        void action()
+    }
+
+    class GardenBehaviour extends AbstractTileBehaviour {
+        void action()
+    }
+
+    class KitchenBehaviour extends AbstractTileBehaviour {
+        void action()
+    }
+
+    class DefaultBehaviour extends AbstractTileBehaviour {
+        void action()
+    }
+
+    Tile *-- AbstractTileBehaviour
 }
 
-class EvilTempleBehaviour {
+package items <<Folder>> #DDDDDD {
+    class Item {
+        String item_name
+        AbstractItemBehaviour item_behaviour
+        void __init__(self)
+    }
 
+    abstract class AbstractItemBehaviour {
+        void action()
+    }
+
+    class NegativeItemBehaviour extends AbstractItemBehaviour {
+        void action()
+    }
+
+    class PassiveItemBehaviour extends AbstractItemBehaviour {
+        void action()
+    }
+
+    class PositiveItemBehaviour extends AbstractItemBehaviour {
+        void action()
+    }
+
+    Item *-- AbstractItemBehaviour
 }
 
-class GraveyardBehaviour {
+package cards <<Folder>> #DDDDDD {
+    class Card {
+        TimeAction[] time_actions
+    }
 
+    class TimeAction {
+        Integer time
+        AbstractTimeBehaviour time_behaviour
+    }
+
+    abstract class AbstractTimeBehaviour {
+        void action()
+    }
+
+    class GoodTimeBehaviour extends AbstractTimeBehaviour {
+        void action()
+    }
+
+    class BadTimeBehaviour extends AbstractTimeBehaviour {
+        void action()
+    }
+
+    class NeutralTimeBehaviour extends AbstractTimeBehaviour {
+        void action()
+    }
+
+    Card *-- TimeAction
+    TimeAction *-- AbstractTimeBehaviour
 }
 
-class GardenBehaviour {
-
-}
-
-class KitchenBehaviour {
-
-}
-
-class DefaultBehaviour {
-
-}
-
-Tile <|-- DefaultBehaviour
-Tile <|-- EvilTempleBehaviour
-Tile <|-- GraveyardBehaviour
-Tile <|-- GardenBehaviour
-Tile <|-- KitchenBehaviour
-
-class Item {
-    String item_name
-    void __init__(self)
-}
-
-abstract AbstractItemBehavior {
-    void action()
-}
-
-class OilBehaviour {
-    void action()
-}
-
-class GasolineBehavior {
-    void action()
-}
-
-class BoardWNailBehavior {
-    void action()
-}
-
-class CanOfSodaBehavior {
-    void action()
-}
-
-class GrislyFemurBehavior {
-    void action()
-}
-
-class GolfClubBehavior {
-    void action()
-}
-
-class CandleBehavior {
-    void action()
-}
-
-class ChainsawBehavior {
-    void action()
-}
-
-class MacheteBehavior {
-    void action()
-}
-
-AbstractItemBehavior <|-- CandleBehavior
-AbstractItemBehavior <|-- ChainsawBehavior
-AbstractItemBehavior <|-- ChainsawBehavior
-AbstractItemBehavior <|-- MacheteBehavior
-AbstractItemBehavior <|-- GolfClubBehavior
-AbstractItemBehavior <|-- GrislyFemurBehavior
-AbstractItemBehavior <|-- BoardWNailBehavior
-AbstractItemBehavior <|-- GasolineBehavior
-AbstractItemBehavior <|-- CanOfSodaBehavior
-AbstractItemBehavior <|-- OilBehaviour
-
-class Card
 @enduml

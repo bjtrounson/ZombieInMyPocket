@@ -1,7 +1,7 @@
 from abstract_item_behaviour import AbstractItemBehaviour
 
 
-class GasolineBehaviour(AbstractItemBehaviour):
+class NegativeItemBehaviour(AbstractItemBehaviour):
 
     def action(self):
         pass

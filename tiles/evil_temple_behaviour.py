@@ -1,4 +1,4 @@
-from tile_behaviour import TileBehaviour
+from abstract_tile_behaviour import TileBehaviour
 
 
 class EvilTempleBehaviour(TileBehaviour):
