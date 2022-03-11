@@ -1,12 +1,29 @@
 @startuml Class Diagram
-class Player {
-
-}
 
 class Game {
     Integer time
     Player player
+    Tile[] outdoor_tiles
+    Tile[] indoor_tiles
+    Card[] dev_cards
+    Card[] current_dev_cards
     void setup()
+    void shuffle(cards: Card[])
+    void move(move_direction: MoveType)
+    void pickup_item()
+    void attack(zombie_count: Integer, attack_score: Integer)
+    void cower()
+}
+
+class Player {
+    Integer health
+    Integer attack
+    Item[]
+}
+
+enum MoveType {
+    NextRoom
+    PreviousRoom
 }
 
 class Tile {
@@ -40,6 +57,61 @@ Tile <|-- GraveyardBehaviour
 Tile <|-- GardenBehaviour
 Tile <|-- KitchenBehaviour
 
+class Item {
+    String item_name
+    void __init__(self)
+}
+
+abstract AbstractItemBehavior {
+    void action()
+}
+
+class OilBehaviour {
+    void action()
+}
+
+class GasolineBehavior {
+    void action()
+}
+
+class BoardWNailBehavior {
+    void action()
+}
+
+class CanOfSodaBehavior {
+    void action()
+}
+
+class GrislyFemurBehavior {
+    void action()
+}
+
+class GolfClubBehavior {
+    void action()
+}
+
+class CandleBehavior {
+    void action()
+}
+
+class ChainsawBehavior {
+    void action()
+}
+
+class MacheteBehavior {
+    void action()
+}
+
+AbstractItemBehavior <|-- CandleBehavior
+AbstractItemBehavior <|-- ChainsawBehavior
+AbstractItemBehavior <|-- ChainsawBehavior
+AbstractItemBehavior <|-- MacheteBehavior
+AbstractItemBehavior <|-- GolfClubBehavior
+AbstractItemBehavior <|-- GrislyFemurBehavior
+AbstractItemBehavior <|-- BoardWNailBehavior
+AbstractItemBehavior <|-- GasolineBehavior
+AbstractItemBehavior <|-- CanOfSodaBehavior
+AbstractItemBehavior <|-- OilBehaviour
 
 class Card
 @enduml
