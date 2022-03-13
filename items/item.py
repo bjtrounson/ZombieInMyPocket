@@ -1,4 +1,4 @@
-from abstract_item_behaviour import AbstractItemBehaviour
+from items.abstract_item_behaviour import AbstractItemBehaviour
 
 
 class Item:

@@ -99,24 +99,32 @@ package cards <<Folder>> #DDDDDD {
     }
 
     class TimeAction {
-        Integer time
-        AbstractTimeBehaviour time_behaviour
+        time : int
+        time_behaviour : AbstractTimeBehaviour
+        __init__(self, time: int, time_behaviour: AbstractTimeBehaviour)
     }
 
     abstract class AbstractTimeBehaviour {
-        void action()
+        message : str
+        __init__(self, message: str)
+        action()
     }
 
     class GoodTimeBehaviour extends AbstractTimeBehaviour {
-        void action()
+        health : int
+        __init__(self, message: str, health: int)
+        action() -> int
     }
 
     class BadTimeBehaviour extends AbstractTimeBehaviour {
-        void action()
+        damage : int
+        __init__(self, message: str, damage: int)
+        action() -> int
     }
 
     class NeutralTimeBehaviour extends AbstractTimeBehaviour {
-        void action()
+        __init__(self, message: str)
+        action() -> str
     }
 
     Card *-- TimeAction
