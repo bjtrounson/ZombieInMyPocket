@@ -1,7 +1,7 @@
 from tiles.abstract_tile_behaviour import TileBehaviour
 
 
-class GardenBehaviour(TileBehaviour):
+class StorageBehaviour(TileBehaviour):
 
     def action(self):
         pass

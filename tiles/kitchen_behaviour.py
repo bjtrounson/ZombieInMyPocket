@@ -1,4 +1,4 @@
-from abstract_tile_behaviour import TileBehaviour
+from tiles.abstract_tile_behaviour import TileBehaviour
 
 
 class KitchenBehaviour(TileBehaviour):

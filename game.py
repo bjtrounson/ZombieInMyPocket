@@ -7,8 +7,6 @@ from move_type import MoveType
 class Game:
     time: int
     player: Player
-    outdoor_tiles: list[Tile]
-    indoor_tiles: list[Tile]
     dev_cards: list[Card]
     current_dev_cards: list[Card]
     current_dev_card: Card

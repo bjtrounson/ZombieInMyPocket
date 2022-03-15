@@ -6,14 +6,14 @@ from cards.item_time_behaviour import ItemTimeBehaviour
 from cards.bad_time_behaviour import BadTimeBehaviour
 from cards.good_time_behaviour import GoodTimeBehaviour
 from items.item import Item
-from items.passive_item_behaviour import PassiveItemBehaviour
+from items.item_type import ItemType
 
 
 class CardTestCases(unittest.TestCase):
 
     def test_when_card_has_more_than_3_time_actions_expect_exception_raised(self):
         time_actions = [TimeAction(9, NeutralTimeBehaviour("You try hard not to wet yourself")),
-                        TimeAction(10, ItemTimeBehaviour("ITEM", Item("Oil", PassiveItemBehaviour()))),
+                        TimeAction(10, ItemTimeBehaviour("ITEM", Item(ItemType.Oil))),
                         TimeAction(11, BadTimeBehaviour(6, "6 Zombies")),
                         TimeAction(11, BadTimeBehaviour(6, "6 Zombies")),
                         ]
@@ -23,7 +23,7 @@ class CardTestCases(unittest.TestCase):
         raised = False
         try:
             time_actions = [TimeAction(9, NeutralTimeBehaviour("You try hard not to wet yourself")),
-                            TimeAction(10, ItemTimeBehaviour("ITEM", Item("Oil", PassiveItemBehaviour()))),
+                            TimeAction(10, ItemTimeBehaviour("ITEM", Item(ItemType.Oil))),
                             TimeAction(11, BadTimeBehaviour(6, "6 Zombies")),
                             ]
             Card(time_actions)
@@ -33,7 +33,7 @@ class CardTestCases(unittest.TestCase):
 
     def test_when_card_with_item_expect_has_item(self):
         time_actions = [TimeAction(9, NeutralTimeBehaviour("You try hard not to wet yourself")),
-                        TimeAction(10, ItemTimeBehaviour("ITEM", Item("Oil", PassiveItemBehaviour()))),
+                        TimeAction(10, ItemTimeBehaviour("ITEM", Item(ItemType.Oil))),
                         TimeAction(11, BadTimeBehaviour(6, "6 Zombies")),
                         ]
         card = Card(time_actions)
@@ -43,7 +43,7 @@ class CardTestCases(unittest.TestCase):
 
     def test_when_card_with_bad_time_behaviour_expect_number_of_damage(self):
         time_actions = [TimeAction(9, NeutralTimeBehaviour("You try hard not to wet yourself")),
-                        TimeAction(10, ItemTimeBehaviour("ITEM", Item("Oil", PassiveItemBehaviour()))),
+                        TimeAction(10, ItemTimeBehaviour("ITEM", Item(ItemType.Oil))),
                         TimeAction(11, BadTimeBehaviour(6, "6 Zombies")),
                         ]
         card = Card(time_actions)
@@ -53,7 +53,7 @@ class CardTestCases(unittest.TestCase):
 
     def test_when_card_with_neutral_time_behaviour_expect_message(self):
         time_actions = [TimeAction(9, NeutralTimeBehaviour("You try hard not to wet yourself")),
-                        TimeAction(10, ItemTimeBehaviour("ITEM", Item("Oil", PassiveItemBehaviour()))),
+                        TimeAction(10, ItemTimeBehaviour("ITEM", Item(ItemType.Oil))),
                         TimeAction(11, BadTimeBehaviour(6, "6 Zombies")),
                         ]
         card = Card(time_actions)
@@ -63,7 +63,7 @@ class CardTestCases(unittest.TestCase):
 
     def test_when_card_with_good_time_behaviour_expect_number_of_health(self):
         time_actions = [TimeAction(9, NeutralTimeBehaviour("You try hard not to wet yourself")),
-                        TimeAction(10, ItemTimeBehaviour("ITEM", Item("Oil", PassiveItemBehaviour()))),
+                        TimeAction(10, ItemTimeBehaviour("ITEM", Item(ItemType.Oil))),
                         TimeAction(11, GoodTimeBehaviour("Candybar in your pocket", 1)),
                         ]
         card = Card(time_actions)
