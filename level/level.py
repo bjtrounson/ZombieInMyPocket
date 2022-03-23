@@ -20,18 +20,13 @@ class Level:
         self._tiles = tiles
 
     def add_new_tile(self, tile: Tile):
-        try:
-            if not self.check_if_tile_already_exists(tile.get_x(), tile.get_y()):
-                if self.check_if_door_exist_near_cords(tile.get_x(), tile.get_y()):
-                    self._tiles.append(tile)
-                else:
-                    raise NoDoorNearError()
+        if not self.check_if_tile_already_exists(tile.get_x(), tile.get_y()):
+            if self.check_if_door_exist_near_cords(tile.get_x(), tile.get_y()):
+                self._tiles.append(tile)
             else:
-                raise TileExistsError()
-        except TileExistsError as e:
-            print(f"Tile already exists here! :( {e}")
-        except NoDoorNearError as e:
-            print(f"No doors near that location! :( {e}")
+                raise NoDoorNearError("No doors near that location")
+        else:
+            raise TileExistsError("Tile already exists here")
 
     def check_if_tile_already_exists(self, x: float, y: float) -> bool:
         if len(self._tiles) < 2:
