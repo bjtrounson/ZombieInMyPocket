@@ -107,5 +107,9 @@ class Tile:
     def get_y(self) -> float:
         return self._y
 
+    def set_pos(self, x: float, y: float):
+        self._x = x
+        self._y = y
+
     def get_tile_sides(self) -> [AbstractTileSide]:
         return self._tile_sides

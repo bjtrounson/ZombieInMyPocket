@@ -81,3 +81,6 @@ class Level:
 
     def get_tile_count(self) -> int:
         return len(self._tiles)
+
+    def get_player(self) -> Player:
+        return self._player
