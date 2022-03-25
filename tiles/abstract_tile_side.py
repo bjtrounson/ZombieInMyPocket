@@ -10,3 +10,6 @@ class AbstractTileSide(ABC):
 
     def get_tile_side(self):
         return self._original_tile_side
+
+    def __eq__(self, other):
+        return self._original_tile_side == other

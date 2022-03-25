@@ -16,8 +16,9 @@ class Level:
     _tiles: list[Tile]
     _player: Player
 
-    def __init__(self, tiles: list[Tile]):
+    def __init__(self, tiles: list[Tile], player: Player):
         self._tiles = tiles
+        self._player = player
 
     def add_new_tile(self, tile: Tile):
         if not self.check_if_tile_already_exists(tile.get_x(), tile.get_y()):

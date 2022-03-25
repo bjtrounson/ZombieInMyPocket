@@ -15,13 +15,14 @@ class Game:
     _outside_tiles: list[Tile]
     _dev_cards: list[Card]
     _current_dev_cards: list[Card]
-    _current_dev_card: Card
+    _current_dev_card: Card | None
     _level: Level
 
     def __init__(self, time: int, level: Level, dev_cards: list[Card]):
         self._time = time
         self._level = level
         self._dev_cards = dev_cards
+        self._current_dev_card = None
         self._inside_tiles = [Tile(TileType.Bedroom, 0, 0), Tile(TileType.DiningRoom, 0, 0),
                               Tile(TileType.EvilTemple, 0, 0), Tile(TileType.Storage, 0, 0),
                               Tile(TileType.Kitchen, 0, 0), Tile(TileType.Bathroom, 0, 0),
@@ -44,8 +45,7 @@ class Game:
 
     @staticmethod
     def shuffle_decks(deck: list[Card | Tile]) -> list[Card | Tile]:
-        random.shuffle(deck)
-        return deck
+        return random.sample(deck, len(deck))
 
     def draw_tile(self) -> Tile:
         if self._level.get_player().get_is_inside():
@@ -90,31 +90,35 @@ class Game:
     @staticmethod
     def correct_tile_rotation(correct_door_position: TilePosition, new_tile: Tile, exit_door: Door) -> Tile:
         exit_door_position_on_tile: int = new_tile.get_tile_sides().index(exit_door)
-        while exit_door_position_on_tile != correct_door_position:
+        while exit_door_position_on_tile != correct_door_position.value:
             new_tile.rotate_tile(RotationDirection.Right)
             exit_door_position_on_tile = new_tile.get_tile_sides().index(exit_door)
         return new_tile
 
     @staticmethod
-    def get_tile_sides(tile: Tile) -> list[Door]:
+    def get_tile_doors(tile: Tile) -> list[Door]:
         doors_list: list[Door] = []
         for side in tile.get_tile_sides():
             if type(side) is Door:
                 doors_list.append(side)
         return doors_list
 
-    def movement_algorithm(self, new_tile: Tile):
+    def movement_algorithm(self, new_tile: Tile) -> bool:
         try:
             if self._level.get_player().get_is_inside():
                 self._level.add_new_tile(new_tile)
                 self._inside_tiles.pop(self._get_index_of_tile(new_tile))
+                return True
             else:
                 self._level.add_new_tile(new_tile)
                 self._outside_tiles.pop(self._get_index_of_tile(new_tile))
+                return True
         except TileExistsError:
             print("Tile already exists there!")
+            return False
         except NoDoorNearError:
             print("No Doors exist there!")
+            return False
 
     def _get_index_of_tile(self, target_tile: Tile) -> int:
         if self._level.get_player().get_is_inside():
@@ -126,7 +130,7 @@ class Game:
         pass
 
     def attack(self, zombie_count: int, attack_score: int):
-        if zombie_count < attack_score:
+        if zombie_count <= attack_score:
             return
         else:
             damage_taken = zombie_count - attack_score
