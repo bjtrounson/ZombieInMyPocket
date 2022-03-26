@@ -34,6 +34,17 @@ class Game:
                                Tile(TileType.Garage, 0, 0)]
 
     def setup(self):
+        """
+
+        :return:
+        >>> player = Player(6, 1, [], 0, 0)
+        >>> tiles = [Tile(TileType.Foyer, 0, 0)]
+        >>> level = Level(tiles, player)
+        >>> card_manager  = CardManager()
+        >>> card_manager.add_all_cards()
+        >>> game = Game(9, level, card_manager.get_deck())
+        >>> game.setup()
+        """
         # Shuffle and setup development cards
         self.shuffle_decks(self._dev_cards)
         del self._dev_cards[2:]
