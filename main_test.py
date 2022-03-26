@@ -1,3 +1,5 @@
+import doctest
+
 from cards.card_tests.card_tests import CardTestCases
 from game_tests.game_tests import GameTestCases
 from items.item_tests.item_tests import ItemTestCases
@@ -10,3 +12,4 @@ if __name__ == '__main__':
     TileTestCases()
     LevelTestCases()
     GameTestCases()
+    doctest.testmod()

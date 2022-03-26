@@ -1,12 +1,13 @@
 import random
 
+from cards.card import Card
+from cards.card_manager import CardManager
 from level.level import Level, NoDoorNearError, TileExistsError
 from player import Player
 from tiles.door import Door
 from tiles.tile import Tile, RotationDirection
-from tiles.tile_type import TileType
-from cards.card import Card
 from tiles.tile_positions import TilePosition
+from tiles.tile_type import TileType
 
 
 class Game:
@@ -45,9 +46,31 @@ class Game:
 
     @staticmethod
     def shuffle_decks(deck: list[Card | Tile]) -> list[Card | Tile]:
+        """
+        Given a deck of cards or tiles, return deck in shuffled order
+        :param deck: list[Card | Tile]
+        :return : list[Card | Tile]
+        >>> card_manager  = CardManager()
+        >>> card_manager.add_all_cards()
+        >>> cards = card_manager.get_deck()
+        >>> Game.shuffle_decks(cards) #doctest: +ELLIPSIS
+        [<cards.card.Card object at 0x...>]
+        """
         return random.sample(deck, len(deck))
 
     def draw_tile(self) -> Tile:
+        """
+        Draws tile from inside or outside tiles
+        :return: Tile
+        >>> player = Player(6, 1, [], 0, 0)
+        >>> tiles = [Tile(TileType.Foyer, 0, 0)]
+        >>> level = Level(tiles, player)
+        >>> card_manager  = CardManager()
+        >>> card_manager.add_all_cards()
+        >>> game = Game(9, level, card_manager.get_deck())
+        >>> game.draw_tile() #doctest: +ELLIPSIS
+        <tiles.tile.Tile object at 0x...>
+        """
         if self._level.get_player().get_is_inside():
             tile = self._inside_tiles[0]
             return tile
@@ -56,6 +79,24 @@ class Game:
             return tile
 
     def move(self, entry_door: Door, exit_door: Door, new_tile: Tile):
+        """
+
+        :param entry_door: Door
+        :param exit_door: Door
+        :param new_tile: Tile
+        :return:
+        >>> player = Player(6, 1, [], 0, 0)
+        >>> tiles = [Tile(TileType.Foyer, 0, 0)]
+        >>> level = Level(tiles, player)
+        >>> card_manager  = CardManager()
+        >>> card_manager.add_all_cards()
+        >>> game = Game(9, level, card_manager.get_deck())
+        >>> game.setup()
+        >>> tile = game.draw_tile()
+        >>> first_door = tiles[0].get_tile_sides()[0]
+        >>> second_door = game.get_tile_doors(tile)[0]
+        >>> game.move(first_door, second_door, tile)
+        """
         player_pos_x = self._level.get_player().get_x()
         player_pos_y = self._level.get_player().get_y()
 
@@ -69,26 +110,40 @@ class Game:
                 new_tile = self.correct_tile_rotation(TilePosition.South, new_tile, exit_door)
                 new_tile.set_pos(player_pos_x, player_pos_y + 1)
                 self._level.get_player().set_player_pos(player_pos_x, player_pos_y + 1)
-                self.movement_algorithm(new_tile)
+                self.tile_algorithm(new_tile)
             case TilePosition.East:
                 new_tile = self.correct_tile_rotation(TilePosition.West, new_tile, exit_door)
                 new_tile.set_pos(player_pos_x, player_pos_y + 1)
                 self._level.get_player().set_player_pos(player_pos_x, player_pos_y + 1)
                 new_tile.set_pos(player_pos_x, player_pos_y - 1)
-                self.movement_algorithm(new_tile)
+                self.tile_algorithm(new_tile)
             case TilePosition.South:
                 new_tile = self.correct_tile_rotation(TilePosition.North, new_tile, exit_door)
                 new_tile.set_pos(player_pos_x, player_pos_y + 1)
                 self._level.get_player().set_player_pos(player_pos_x, player_pos_y + 1)
-                self.movement_algorithm(new_tile)
+                self.tile_algorithm(new_tile)
             case TilePosition.West:
                 new_tile = self.correct_tile_rotation(TilePosition.East, new_tile, exit_door)
                 new_tile.set_pos(player_pos_x, player_pos_y + 1)
                 self._level.get_player().set_player_pos(player_pos_x, player_pos_y + 1)
-                self.movement_algorithm(new_tile)
+                self.tile_algorithm(new_tile)
 
     @staticmethod
     def correct_tile_rotation(correct_door_position: TilePosition, new_tile: Tile, exit_door: Door) -> Tile:
+        """
+        Given a tile, tile position and an exit door on the tile, return the tile in the correct rotation
+        :param correct_door_position: TilePosition
+        :param new_tile: Tile
+        :param exit_door: Door
+        :return: Tile
+
+        >>> tile = Tile(TileType.Foyer, 0, 0)
+        >>> door_position = TilePosition.South
+        >>> side = tile.get_side_from_index(tile.get_door_index_from_position(TilePosition.North.value))
+        >>> door = Door(side.original_tile_side)
+        >>> Game.correct_tile_rotation(door_position, tile, door) #doctest: +ELLIPSIS
+        <tiles.tile.Tile object at 0x...>
+        """
         exit_door_position_on_tile: int = new_tile.get_tile_sides().index(exit_door)
         while exit_door_position_on_tile != correct_door_position.value:
             new_tile.rotate_tile(RotationDirection.Right)
@@ -97,13 +152,41 @@ class Game:
 
     @staticmethod
     def get_tile_doors(tile: Tile) -> list[Door]:
+        """
+
+        :param tile: Tile
+        :return: list[Door]
+        >>> player = Player(6, 1, [], 0, 0)
+        >>> tiles = [Tile(TileType.Foyer, 0, 0)]
+        >>> level = Level(tiles, player)
+        >>> card_manager  = CardManager()
+        >>> card_manager.add_all_cards()
+        >>> game = Game(9, level, card_manager.get_deck())
+        >>> game.get_tile_doors(game.draw_tile()) #doctest: +ELLIPSIS
+        [<tiles.door.Door object at 0x...>]
+        """
         doors_list: list[Door] = []
         for side in tile.get_tile_sides():
             if type(side) is Door:
                 doors_list.append(side)
         return doors_list
 
-    def movement_algorithm(self, new_tile: Tile) -> bool:
+    def tile_algorithm(self, new_tile: Tile) -> bool:
+        """
+        Give a tile to be added to the level
+        :param new_tile: Tile
+        :return: bool
+        >>> player = Player(6, 1, [], 0, 0)
+        >>> tiles = [Tile(TileType.Foyer, 0, 0)]
+        >>> level = Level(tiles, player)
+        >>> card_manager = CardManager()
+        >>> card_manager.add_all_cards()
+        >>> game = Game(9, level, card_manager.get_deck())
+        >>> tile = game.draw_tile()
+        >>> tile.set_pos(0, 1)
+        >>> game.tile_algorithm(tile)
+        True
+        """
         try:
             if self._level.get_player().get_is_inside():
                 self._level.add_new_tile(new_tile)
@@ -121,6 +204,20 @@ class Game:
             return False
 
     def _get_index_of_tile(self, target_tile: Tile) -> int:
+        """
+        Given tile, return tile index
+        :param target_tile:
+        :return int:
+        >>> player = Player(6, 1, [], 0, 0)
+        >>> tiles = [Tile(TileType.Foyer, 0, 0)]
+        >>> level = Level(tiles, player)
+        >>> card_manager  = CardManager()
+        >>> card_manager.add_all_cards()
+        >>> game = Game(9, level, card_manager.get_deck())
+        >>> tile = game.draw_tile()
+        >>> game._get_index_of_tile(tile)
+        0
+        """
         if self._level.get_player().get_is_inside():
             return self._inside_tiles.index(target_tile)
         else:
@@ -130,6 +227,19 @@ class Game:
         pass
 
     def attack(self, zombie_count: int, attack_score: int):
+        """
+
+        :param zombie_count: int
+        :param attack_score: int
+        :return:
+        >>> player = Player(6, 1, [], 0, 0)
+        >>> tiles = [Tile(TileType.Foyer, 0, 0)]
+        >>> level = Level(tiles, player)
+        >>> card_manager  = CardManager()
+        >>> card_manager.add_all_cards()
+        >>> game = Game(9, level, card_manager.get_deck())
+        >>> game.attack(4, 6)
+        """
         if zombie_count <= attack_score:
             return
         else:
@@ -137,4 +247,15 @@ class Game:
             self._level.get_player().set_health(self._level.get_player().get_health() - damage_taken)
 
     def cower(self) -> None:
+        """
+
+        :return:
+         >>> player = Player(6, 1, [], 0, 0)
+        >>> tiles = [Tile(TileType.Foyer, 0, 0)]
+        >>> level = Level(tiles, player)
+        >>> card_manager  = CardManager()
+        >>> card_manager.add_all_cards()
+        >>> game = Game(9, level, card_manager.get_deck())
+        >>> game.cower()
+        """
         self._level.get_player().set_health(self._level.get_player().get_health() + 3)

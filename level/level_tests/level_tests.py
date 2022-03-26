@@ -65,6 +65,13 @@ class LevelTestCases(unittest.TestCase):
         actual_result = level.get_tile_by_cords(1, 0)
         self.assertEqual(expected_result, actual_result)
 
+    def test_when_player_is_on_tile_expect_tile_player_is_on(self):
+        tile = [Tile(TileType.Foyer, 0, 0)]
+        level = Level(tile, self.player)
+        expected_result = tile[0]
+        actual_result = level.get_tile_player_is_on()
+        self.assertEqual(expected_result, actual_result)
+
 
 if __name__ == '__main__':
     unittest.main()

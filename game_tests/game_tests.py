@@ -99,7 +99,7 @@ class GameTestCases(unittest.TestCase):
     def test_when_move_algorithm_inside_expect_inside_tile_deck_to_be_smaller(self):
         tile = self.game.draw_tile()
         tile.set_pos(0, 1)
-        self.game.movement_algorithm(tile)
+        self.game.tile_algorithm(tile)
         expected_deck_count = 7
         actual_deck_count = len(self.game._inside_tiles)
         self.assertNotEqual(expected_deck_count, actual_deck_count)
@@ -108,32 +108,32 @@ class GameTestCases(unittest.TestCase):
         self.game._level.get_player()._inside = False
         tile = self.game.draw_tile()
         tile.set_pos(0, 1)
-        self.game.movement_algorithm(tile)
+        self.game.tile_algorithm(tile)
         expected_deck_count = 7
         actual_deck_count = len(self.game._outside_tiles)
         self.assertNotEqual(expected_deck_count, actual_deck_count)
 
     def test_when_move_algorithm_has_exception_tile_already_exists_expect_false(self):
         tile = self.game.draw_tile()
-        result = self.game.movement_algorithm(tile)
+        result = self.game.tile_algorithm(tile)
         self.assertFalse(result)
 
     def test_when_move_algorithm_doesnt_have_exception_tile_already_exist_expect_true(self):
         tile = self.game.draw_tile()
         tile.set_pos(0, 1)
-        result = self.game.movement_algorithm(tile)
+        result = self.game.tile_algorithm(tile)
         self.assertTrue(result)
 
     def test_when_move_algorithm_has_exception_no_doors_near_expect_false(self):
         tile = self.game.draw_tile()
         tile.set_pos(1, 0)
-        result = self.game.movement_algorithm(tile)
+        result = self.game.tile_algorithm(tile)
         self.assertFalse(result)
 
     def test_when_move_algorithm_doesnt_have_exception_no_doors_near_expect_true(self):
         tile = self.game.draw_tile()
         tile.set_pos(0, 1)
-        result = self.game.movement_algorithm(tile)
+        result = self.game.tile_algorithm(tile)
         self.assertTrue(result)
 
     def test_when_attack_zombie_count_is_lower_than_player_damage_expect_no_damage_taken(self):

@@ -71,7 +71,7 @@ class Level:
 
     def get_tile_player_is_on(self) -> Tile:
         for tile in self._tiles:
-            if tile.get_x() == self._player.get_x() and tile.get_y == self._player.get_y():
+            if tile.get_x() == self._player.get_x() and tile.get_y() == self._player.get_y():
                 return tile
 
     def get_tile_by_cords(self, x: float, y: float) -> Tile | bool:
