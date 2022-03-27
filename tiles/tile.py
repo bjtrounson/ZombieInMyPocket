@@ -22,7 +22,7 @@ class Tile:
     tile_name: str
     tile_type: TileType
     tile_behaviour: TileBehaviour
-    _tile_sides: [AbstractTileSide]
+    _tile_sides: list[AbstractTileSide]
     _x: float
     _y: float
 

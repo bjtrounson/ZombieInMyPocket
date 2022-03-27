@@ -1,134 +1,322 @@
-@startuml Class Diagram
-skinparam groupInheritance 3
+@startuml
+skinparam groupInheritance 2
+' Split into 4 pages
+page 2x2
+skinparam pageMargin 10
+skinparam pageExternalColor gray
+skinparam pageBorderColor black
 
-class Game {
-    Integer time
-    Player player
-    Tile[] outdoor_tiles
-    Tile[] indoor_tiles
-    Card[] dev_cards
-    Card[] current_dev_cards
-    void setup()
-    void shuffle(cards: Card[])
-    void move(move_direction: MoveType)
-    void pickup_item()
-    void attack(zombie_count: Integer, attack_score: Integer)
-    void cower()
+together {
+  class Main {
+        #_game : Game
+        #_player : Player
+        #_card_manager : CardManager
+        #_pickle_manager: PickleManager
+        __init__(self)
+        +do_help(self, args) -> bool | None
+        +quit(self, args) -> bool
+        +player_health(self, args) -> None
+        +player_attack(self, args) -> None
+        +stats(self, args) -> None
+        +rename(self, args) -> Any
+        +save_game(self, args) -> None
+        +load_game(self, args) -> None
+        +default(self, args) -> bool
+    }
+
+
+    class Parser {
+        args = str
+        __init__(self)
+    }
+
+    class PickleManager {
+        #_current_dir
+        __init__(self)
+        +serialize_object_to_file(self, file_name: str, obj: Game) -> None
+        +deserialize_file_to_object(self, file_name: str) -> Game
+        +remove_save(self, file_name: str) -> None
+        +get_current_dir(self) -> str
+    }
+
+    class Game {
+        #_time: int
+        #_inside_tiles: list[Tile]
+        #_outside_tiles: list[Tile]
+        #_dev_cards: list[Card]
+        #_current_dev_cards: list[Card]
+        #_current_dev_card: Card | None
+        #_level: Level
+        __init__(self, time: int, level: Level, dev_cards: list[Card])
+        +setup() -> None
+        +{static} shuffle_decks(deck: list[Card | Tile]) -> list[Card | Tile]
+        +draw_tile(self) -> Tile
+        +move(self, entry_door: Door, exit_door: Door, new_tile: Tile) -> None
+        +{static}correct_tile_rotation(correct_door_position: TilePosition, new_tile: Tile, exit_door: Door) -> Tile
+        +{static}get_tile_doors(tile: Tile) -> list[Door]
+        +tile_algorithm(self, new_tile: Tile) -> bool
+        #_get_index_of_tile(self, target_tile: Tile) -> int
+        +pickup_item()
+        +attack(self, zombie_count: int, attack_score: int) -> None
+        +cower(self) -> None
+    }
+
+    class Player {
+        #_health : int
+        #_attack : int
+        #_player_items : list[Item]
+        #_inside : bool
+        #_x : float
+        #_y : float
+        __init__(self, health: int, attack: int, player_items: list[Item], x: float, y: float)
+        +get_x(self) -> float
+        +get_y(self) -> float
+        +get_health(self) -> int
+        +get_is_inside(self) -> bool
+        +get_attack_score(self) -> int
+        +set_health(self) -> None
+        +set_player_pos(self, x: float, y: float) -> None
+    }
+
+    package level <<Folder>> #DDDDDD {
+        class Level {
+            #_tiles : list[Tile]
+            #_player : Player
+            __init__(self, tiles: list[Tile], player: Player)
+            +add_new_tile(self, tile: Tile)
+            +check_if_tile_already_exists(self, x: float, y: float) -> bool
+            +heck_if_door_exist_near_cords(self, x: float, y: float) -> bool
+            +{static}get_door_info_on_tile(tile: Tile) -> [dict[int, TilePosition]]
+            +get_tile_player_is_on(self) -> Tile
+            +get_tile_by_cords(self, x: float, y: float) -> Tile | bool
+            +get_tile_count(self) -> int
+            +get_player(self) -> Player
+        }
+    }
 }
 
-class Player {
-    Integer health
-    Integer attack
-    Item[] player_items
-    void __init__(self, health, attack, player_items)
-}
 
-enum MoveType {
-    NextRoom
-    PreviousRoom
-}
 
-Game *-- Player
-Game *-- Card
-Game *-- Tile
-Game *-- MoveType
-Player *-- Item
+
 
 package tiles <<Folder>> #DDDDDD {
     class Tile {
-        String tile_name
-        AbstractTileBehaviour tile_behaviour
+        +tile_name : str
+        +tile_type : TileType
+        +tile_behaviour : AbstractTileBehaviour
+        #_tile_sides : list[AbstractTileSide]
+        #_x : float
+        #_y : float
+        __init__(self, tile_type: TileType, x: float, y: float)
+        #_change_tile_side(self, tile_position: TilePosition, side) -> None
+        +rotate_tile(self, rotation_direction: RotationDirection) -> None
+        +get_door_index_from_position(self, door_position: int) -> int
+        +get_side_from_index(self, index: int) -> AbstractTileSide
+        +get_x(self) -> float
+        +get_y(self) -> float
+        +set_pos(self, x: float, y: float) -> None
+        +get_tile_sides(self) -> list[AbstractTileSide]
+        __eq__(self, other) -> bool
+    }
+
+    enum RotationDirection {
+        Right,
+        Left
+    }
+
+    enum TilePosition {
+        North = 0
+        East = 1
+        South = 2
+        West = 3
+    }
+
+    enum TileType {
+        Foyer,
+        Bedroom,
+        DiningRoom,
+        Bathroom,
+        Kitchen,
+        Storage,
+        EvilTemple,
+        Patio,
+        Yard1,
+        Yard2,
+        Yard3,
+        Garage,
+        SittingArea,
+        Garden,
+        Graveyard
+    }
+
+    class Door extends AbstractTileSide {
+        __init__(self, tile_side: TilePosition)
+    }
+
+    class Wall extends AbstractTileSide {
+        __init__(self, tile_side: TilePosition)
+    }
+
+    abstract class AbstractTileSide {
+        +original_tile_side : TilePosition
+        __init__(self, tile_side: TilePosition)
+        +get_tile_side(self) -> TilePosition
+        __eq__(self, other) -> bool
     }
 
     abstract class AbstractTileBehaviour {
-        void action()
+        +{abstract} action(self)
     }
 
     class EvilTempleBehaviour extends AbstractTileBehaviour {
-        void action()
+        +action(self) -> Item
     }
 
     class GraveyardBehaviour extends AbstractTileBehaviour {
-        void action()
+        +action(self) -> str
     }
 
     class GardenBehaviour extends AbstractTileBehaviour {
-        void action()
+        +action(self) -> int
     }
 
     class KitchenBehaviour extends AbstractTileBehaviour {
-        void action()
+        +action(self) -> int
+    }
+
+    class StorageBehavior extends AbstractTileBehaviour {
+        +action(self) -> str
     }
 
     class DefaultBehaviour extends AbstractTileBehaviour {
-        void action()
+        +action(self) -> None
     }
 
-    Tile *-- AbstractTileBehaviour
+
 }
 
 package items <<Folder>> #DDDDDD {
     class Item {
-        String item_name
-        AbstractItemBehaviour item_behaviour
-        void __init__(self)
+        +item_name : str
+        +primary_item_behaviour : AbstractItemBehaviour
+        +optional_item_behaviour : AbstractItemBehaviour
+        +combo_item : ItemType | None
+        +second_combo_item : ItemType | None
+        +uses : int | None
+        +item_type : ItemType
+        __init__(self, item_type: ItemType)
+        +action(self) -> AbstractItemBehaviour
+    }
+
+    enum ItemType {
+        Oil,
+        Gasoline,
+        BoardWNail,
+        CanOfSoda,
+        GrislyFemur,
+        GolfClub,
+        Candle,
+        Chainsaw,
+        Machete
     }
 
     abstract class AbstractItemBehaviour {
-        void action()
+        +{abstract} action(self)
     }
 
     class NegativeItemBehaviour extends AbstractItemBehaviour {
-        void action()
+        +damage : int
+        __init__(self, damage: int)
+        +action(self) -> int
     }
 
     class PassiveItemBehaviour extends AbstractItemBehaviour {
-        void action()
+        +action(self) -> None
     }
 
     class PositiveItemBehaviour extends AbstractItemBehaviour {
-        void action()
+        +health : int
+        __init__(self, health: int)
+        +action(self) -> int
     }
-
-    Item *-- AbstractItemBehaviour
 }
 
 package cards <<Folder>> #DDDDDD {
     class Card {
-        TimeAction[] time_actions
+        +time_actions : list[TimeAction]
+        __init__(self, time_actions: list[TimeAction])
+        +get_time_action(self, time: int) -> TimeAction
+    }
+
+    class CardManager {
+        #_card_deck : list[Card]
+        __init__(self)
+        +add_card(self, item: ItemType) -> None
+        +add_all_cards(self) -> None
+        +get_deck(self) -> list[Card]
     }
 
     class TimeAction {
-        time : int
-        time_behaviour : AbstractTimeBehaviour
+        +time : int
+        +time_behaviour : AbstractTimeBehaviour
         __init__(self, time: int, time_behaviour: AbstractTimeBehaviour)
+        __eq__(self, other) -> bool
     }
 
     abstract class AbstractTimeBehaviour {
-        message : str
+        +message : str
         __init__(self, message: str)
-        action()
+        {abstract}+action(self)
     }
 
     class GoodTimeBehaviour extends AbstractTimeBehaviour {
-        health : int
+        +health : int
         __init__(self, message: str, health: int)
-        action() -> int
+        +action(self) -> int
     }
 
     class BadTimeBehaviour extends AbstractTimeBehaviour {
-        damage : int
+        +damage : int
         __init__(self, message: str, damage: int)
-        action() -> int
+        +action(self) -> int
     }
 
     class NeutralTimeBehaviour extends AbstractTimeBehaviour {
         __init__(self, message: str)
-        action() -> str
+        +action(self) -> str
     }
 
-    Card *-- TimeAction
-    TimeAction *-- AbstractTimeBehaviour
+
 }
 
+Main *-- Game
+Main *-- CardManager
+Main *-- PickleManager
+Main *-- Parser
+Main *-- Player
+Game *-- Player
+Game *-- Card
+Game *-- Tile
+Game *-- Level
+Game *-- TilePosition
+Game *-- Door
+Player *-- Item
+Level *-- Tile
+Level *-- TilePosition
+Level *-- Player
+Tile *-- AbstractTileBehaviour
+Tile *-- TileType
+Tile *-- AbstractTileSide
+Tile *-- RotationDirection
+Tile *-- TilePosition
+AbstractTileSide *-- TilePosition
+Door *- TilePosition
+Wall *- TilePosition
+EvilTempleBehaviour *-- Item
+CardManager *- Card
+CardManager *-- ItemType
+Card *-- TimeAction
+TimeAction *-- AbstractTimeBehaviour
+Item *-- AbstractItemBehaviour
+Item *-- ItemType
 @enduml

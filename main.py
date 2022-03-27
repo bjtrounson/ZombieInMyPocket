@@ -1,5 +1,5 @@
 import cmd
-from pprint import pprint
+
 from cards.card_manager import CardManager
 from game import Game
 from level.level import Level
@@ -38,39 +38,62 @@ class Main(cmd.Cmd):
         self._game = Game(9, level, self._card_manager.get_deck())
         self._pickle_manager = PickleManager()
 
-        print(self._game._level.get_tile_player_is_on().get_tile_sides())
-        print(self._card_manager.get_deck())
-        pprint(vars(self._card_manager.get_deck()[0]))
+        # print(self._game._level.get_tile_player_is_on().get_tile_sides())
+        # print(self._card_manager.get_deck())
+        # pprint(vars(self._card_manager.get_deck()[0]))
 
     def do_help(self, args):
-        """Show commands."""
+        """
+        help <command>
+        Show commands
+        """
         if args in self.aliases:
             args = self.aliases[args].__name__[3:]
             cmd.Cmd.do_help(self, args)
         else:
-            print("Documented commands (type help <topic>):\n========================================")
+            print("Documented commands (type help <command>):\n========================================")
             for key in self.aliases.keys():
-                print(key)
+                print(f"$ {key}")
+                cmd.Cmd.do_help(self, self.aliases[key].__name__[3:])
             print("========================================")
 
     def do_quit(self, args):
-        """Exit the program."""
+        """
+        quit
+        Exit the program
+        """
         return True
 
     def do_player_health(self, args):
-        """Show player health"""
+        """
+        health
+        Show player health
+        """
+        assert self._player.get_health(), "Could not get player health"
         print(f"Health: {self._player.get_health()}")
 
     def do_player_attack(self, args):
-        """Show player attack damage"""
+        """
+        attack
+        Show player attack damage
+        """
+        assert self._player.get_attack_score(), "Could not get player attack score"
         print(f"Attack: {self._player.get_attack_score()}")
 
-    def do_stats(self):
-        """Show player stats"""
+    def do_stats(self, args):
+        """
+        stats
+        Show player stats
+        """
+        assert self._player.get_health(), "Could not get player health"
+        assert self._player.get_attack_score(), "Could not get player attack score"
         print(f"Health: {self._player.get_health()}\nAttack: {self._player.get_attack_score()}")
 
     def do_rename(self, args):
-        """Rebind commands"""
+        """
+        rename <command> <newcommand>
+        Rebind commands, can also be used without arguments
+        """
         if len(args.split()) > 0:
             command = args.split()[0]
         else:
@@ -78,14 +101,27 @@ class Main(cmd.Cmd):
 
         # if "do_{}".format(cmd) in dir(Main):
         if command in self.aliases:
-            if len(args.split()) > 1:
-                new_cmd = args.split()[1]
-            else:
-                new_cmd = input("New command name: ")
-            if new_cmd.isspace():
-                raise TypeError("Blank response")
+            while True:
+                try:
+                    if len(args.split()) > 1:
+                        new_cmd = args.split()[1]
+                    else:
+                        new_cmd = input("New command name: ")
+                    if new_cmd.isspace() or new_cmd == '':
+                        raise TypeError()
+                    if new_cmd in self.aliases:
+                        raise ValueError()
+                    break
+                except TypeError:
+                    print("Blank response")
+                    pass
+                except ValueError:
+                    return print("Command name is already in use")
             self.aliases[new_cmd] = self.aliases[command]
             del self.aliases[command]
+
+            assert new_cmd in self.aliases, f"Command '{command}' was not successfully renamed to '{new_cmd}'"
+            assert not command in self.aliases, f"Original command '{command}' was not successfully removed"
             # self.cmd.__name__ = "do_{}".format(new_cmd)
             print(f"Successfully changed {command} to {new_cmd}")
         else:
@@ -110,11 +146,13 @@ class Main(cmd.Cmd):
             self._game = self._pickle_manager.deserialize_file_to_object(file_name)
         except NoFileNameError:
             print("You need a file name!! 'load_game [file_name] Try Again")
+        except FileNotFoundError:
+            print(f"File not found '{file_name}'")
 
     def default(self, line):
         command, args, line = self.parseline(line)
-        if command in self.aliases:
-            return self.aliases[command](args)
+        if command.lower() in self.aliases:
+            return self.aliases[command.lower()](args)
         else:
             print(f"--- Unknown command: {line}")
 

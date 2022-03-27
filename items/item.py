@@ -54,8 +54,10 @@ class Item:
                 self.optional_item_behaviour = PassiveItemBehaviour()
                 self.combo_item = ItemType.Gasoline
                 self.uses = 2
+            case ItemType.Totem:
+                self.item_name = "Totem"
 
-    def action(self):
+    def action(self) -> AbstractItemBehaviour:
         if self.uses is not None:
             self.uses -= 1
         return self.primary_item_behaviour.action()

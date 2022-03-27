@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1263.78px" preserveAspectRatio="none" style="width:1776px;height:1263px;background:#FFFFFF;" version="1.1" viewBox="0 0 1776 1263" width="1776.84px" zoomAndPan="magnify"><defs><filter height="300%" id="f1t65urt5i07yp" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="1.02"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="2.04" dy="2.04" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[fafdb1d66fef4020b0449694eac608a1]
+cluster level--><polygon fill="#DDDDDD" filter="url(#f1t65urt5i07yp)" points="938.91,346.8,958.29,346.8,961.86,359.5846,1125.57,359.5846,1125.57,482.97,938.91,482.97,938.91,346.8" style="stroke:#000000;stroke-width:0.765;"/><line style="stroke:#000000;stroke-width:0.765;" x1="938.91" x2="961.86" y1="359.5846" y2="359.5846"/><text fill="#000000" font-family="sans-serif" font-size="7.14" font-weight="bold" lengthAdjust="spacing" textLength="16.32" x="940.95" y="355.4526">level</text><!--MD5=[51276ade03fc31006998a0b61f46cb31]
+cluster tiles--><polygon fill="#DDDDDD" filter="url(#f1t65urt5i07yp)" points="8.16,495.21,26.01,495.21,29.58,507.9946,824.16,507.9946,824.16,925.14,8.16,925.14,8.16,495.21" style="stroke:#000000;stroke-width:0.765;"/><line style="stroke:#000000;stroke-width:0.765;" x1="8.16" x2="29.58" y1="507.9946" y2="507.9946"/><text fill="#000000" font-family="sans-serif" font-size="7.14" font-weight="bold" lengthAdjust="spacing" textLength="14.79" x="10.2" y="503.8626">tiles</text><!--MD5=[efb0237bd9668543587733966cf4f7b8]
+cluster items--><polygon fill="#DDDDDD" filter="url(#f1t65urt5i07yp)" points="1075.08,937.38,1098.03,937.38,1101.6,950.1646,1372.41,950.1646,1372.41,1260.21,1075.08,1260.21,1075.08,937.38" style="stroke:#000000;stroke-width:0.765;"/><line style="stroke:#000000;stroke-width:0.765;" x1="1075.08" x2="1101.6" y1="950.1646" y2="950.1646"/><text fill="#000000" font-family="sans-serif" font-size="7.14" font-weight="bold" lengthAdjust="spacing" textLength="19.89" x="1077.12" y="946.0326">items</text><!--MD5=[ac908c79d6e0e8d486b36ddc4a5af44f]
+cluster cards--><polygon fill="#DDDDDD" filter="url(#f1t65urt5i07yp)" points="1408.62,369.75,1430.55,369.75,1434.12,382.5346,1768.17,382.5346,1768.17,921.315,1408.62,921.315,1408.62,369.75" style="stroke:#000000;stroke-width:0.765;"/><line style="stroke:#000000;stroke-width:0.765;" x1="1408.62" x2="1434.12" y1="382.5346" y2="382.5346"/><text fill="#000000" font-family="sans-serif" font-size="7.14" font-weight="bold" lengthAdjust="spacing" textLength="18.87" x="1410.66" y="378.4026">cards</text><!--MD5=[84718776d214be480e4c259efcb737fc]
+class Main--><rect codeLine="9" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="131.4507" id="Main" style="stroke:#A80036;stroke-width:0.765;" width="102.51" x="1174.275" y="3.57"/><ellipse cx="1216.2225" cy="11.73" fill="#ADD1B2" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M1215.9516,15.045 Q1215.0591,15.045 1214.4773,14.6545 Q1213.9036,14.2561 1213.6167,13.5389 Q1213.3378,12.8138 1213.3378,11.8575 Q1213.3378,10.7817 1213.6725,10.0167 Q1214.0072,9.2438 1214.6606,8.8294 Q1215.3141,8.415 1216.2703,8.415 Q1216.7245,8.415 1217.0672,8.5106 Q1217.4098,8.6063 1217.7605,8.7895 L1217.3461,9.8733 Q1217.0273,9.7059 1216.7484,9.6422 Q1216.4775,9.5784 1216.2305,9.5784 Q1215.6328,9.5784 1215.2742,9.8573 Q1214.9156,10.1283 1214.7642,10.6303 Q1214.6128,11.1323 1214.6128,11.8017 Q1214.6128,12.8616 1214.9794,13.3716 Q1215.3459,13.8736 1216.1588,13.8736 Q1216.4616,13.8736 1216.7803,13.7939 Q1217.0991,13.7142 1217.5214,13.515 L1217.5214,14.7023 Q1217.1469,14.8777 1216.7405,14.9653 Q1216.342,15.045 1215.9516,15.045 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" lengthAdjust="spacing" textLength="14.28" x="1226.6775" y="14.1046">Main</text><line style="stroke:#A80036;stroke-width:0.765;" x1="1174.785" x2="1276.275" y1="19.89" y2="19.89"/><polygon fill="none" points="1179.885,22.95,1181.925,24.99,1179.885,27.03,1177.845,24.99" style="stroke:#B38D22;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="37.23" x="1184.475" y="27.927">_game : Game</text><polygon fill="none" points="1179.885,30.5908,1181.925,32.6308,1179.885,34.6708,1177.845,32.6308" style="stroke:#B38D22;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="40.8" x="1184.475" y="35.5678">_player : Player</text><polygon fill="none" points="1179.885,38.2315,1181.925,40.2715,1179.885,42.3115,1177.845,40.2715" style="stroke:#B38D22;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="82.11" x="1184.475" y="43.2086">_card_manager : CardManager</text><polygon fill="none" points="1179.885,45.8723,1181.925,47.9123,1179.885,49.9523,1177.845,47.9123" style="stroke:#B38D22;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="86.7" x="1184.475" y="50.8493">_pickle_manager: PickleManager</text><line style="stroke:#A80036;stroke-width:0.765;" x1="1174.785" x2="1276.275" y1="54.5331" y2="54.5331"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="31.11" x="1184.475" y="62.5701">__init__(self)</text><ellipse cx="1179.885" cy="67.7838" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="89.25" x="1184.475" y="70.2109">do_help(self, args) -&gt; bool | None</text><ellipse cx="1179.885" cy="75.4246" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="58.14" x="1184.475" y="77.8516">quit(self, args) -&gt; bool</text><ellipse cx="1179.885" cy="83.0653" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="85.68" x="1184.475" y="85.4924">player_health(self, args) -&gt; None</text><ellipse cx="1179.885" cy="90.7061" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="84.66" x="1184.475" y="93.1331">player_attack(self, args) -&gt; None</text><ellipse cx="1179.885" cy="98.3469" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="61.71" x="1184.475" y="100.7739">stats(self, args) -&gt; None</text><ellipse cx="1179.885" cy="105.9876" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="65.79" x="1184.475" y="108.4147">rename(self, args) -&gt; Any</text><ellipse cx="1179.885" cy="113.6284" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="78.54" x="1184.475" y="116.0554">save_game(self, args) -&gt; None</text><ellipse cx="1179.885" cy="121.2692" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="78.54" x="1184.475" y="123.6962">load_game(self, args) -&gt; None</text><ellipse cx="1179.885" cy="128.9099" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="66.3" x="1184.475" y="131.337">default(self, args) -&gt; bool</text><!--MD5=[628cc5a2753cca06eb1ffef55c386535]
+class Parser--><rect codeLine="27" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="39.7615" id="Parser" style="stroke:#A80036;stroke-width:0.765;" width="37.23" x="844.815" y="230.775"/><ellipse cx="853.383" cy="238.935" fill="#ADD1B2" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M853.1121,242.25 Q852.2196,242.25 851.6378,241.8595 Q851.0641,241.4611 850.7772,240.7439 Q850.4983,240.0188 850.4983,239.0625 Q850.4983,237.9867 850.833,237.2217 Q851.1677,236.4488 851.8211,236.0344 Q852.4746,235.62 853.4308,235.62 Q853.885,235.62 854.2277,235.7156 Q854.5703,235.8113 854.921,235.9945 L854.5066,237.0783 Q854.1878,236.9109 853.9089,236.8472 Q853.638,236.7834 853.391,236.7834 Q852.7933,236.7834 852.4347,237.0623 Q852.0761,237.3333 851.9247,237.8353 Q851.7733,238.3373 851.7733,239.0067 Q851.7733,240.0666 852.1399,240.5766 Q852.5064,241.0786 853.3193,241.0786 Q853.6221,241.0786 853.9408,240.9989 Q854.2596,240.9192 854.6819,240.72 L854.6819,241.9073 Q854.3074,242.0827 853.901,242.1703 Q853.5025,242.25 853.1121,242.25 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" lengthAdjust="spacing" textLength="18.87" x="860.727" y="241.3096">Parser</text><line style="stroke:#A80036;stroke-width:0.765;" x1="845.325" x2="881.535" y1="247.095" y2="247.095"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="24.99" x="847.875" y="255.132">args = str</text><line style="stroke:#A80036;stroke-width:0.765;" x1="845.325" x2="881.535" y1="258.8158" y2="258.8158"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="31.11" x="847.875" y="266.8528">__init__(self)</text><!--MD5=[0e79addeff4222c9b9313082ede17ad6]
+class PickleManager--><rect codeLine="32" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="70.3246" id="PickleManager" style="stroke:#A80036;stroke-width:0.765;" width="175.95" x="899.895" y="215.475"/><ellipse cx="964.5375" cy="223.635" fill="#ADD1B2" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M964.2666,226.95 Q963.3741,226.95 962.7923,226.5595 Q962.2186,226.1611 961.9317,225.4439 Q961.6528,224.7188 961.6528,223.7625 Q961.6528,222.6867 961.9875,221.9217 Q962.3222,221.1488 962.9756,220.7344 Q963.6291,220.32 964.5853,220.32 Q965.0395,220.32 965.3822,220.4156 Q965.7248,220.5113 966.0755,220.6945 L965.6611,221.7783 Q965.3423,221.6109 965.0634,221.5472 Q964.7925,221.4834 964.5455,221.4834 Q963.9478,221.4834 963.5892,221.7623 Q963.2306,222.0333 963.0792,222.5353 Q962.9278,223.0373 962.9278,223.7067 Q962.9278,224.7666 963.2944,225.2766 Q963.6609,225.7786 964.4738,225.7786 Q964.7766,225.7786 965.0953,225.6989 Q965.4141,225.6192 965.8364,225.42 L965.8364,226.6073 Q965.4619,226.7827 965.0555,226.8703 Q964.657,226.95 964.2666,226.95 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" lengthAdjust="spacing" textLength="42.33" x="974.9925" y="226.0096">PickleManager</text><line style="stroke:#A80036;stroke-width:0.765;" x1="900.405" x2="1075.335" y1="231.795" y2="231.795"/><polygon fill="none" points="905.505,234.855,907.545,236.895,905.505,238.935,903.465,236.895" style="stroke:#B38D22;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="32.64" x="910.095" y="239.832">_current_dir</text><line style="stroke:#A80036;stroke-width:0.765;" x1="900.405" x2="1075.335" y1="243.5158" y2="243.5158"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="31.11" x="910.095" y="251.5528">__init__(self)</text><ellipse cx="905.505" cy="256.7665" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="162.69" x="910.095" y="259.1936">serialize_object_to_file(self, file_name: str, obj: Game) -&gt; None</text><ellipse cx="905.505" cy="264.4073" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="140.25" x="910.095" y="266.8343">deserialize_file_to_object(self, file_name: str) -&gt; Game</text><ellipse cx="905.505" cy="272.0481" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="108.12" x="910.095" y="274.4751">remove_save(self, file_name: str) -&gt; None</text><ellipse cx="905.505" cy="279.6888" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="68.85" x="910.095" y="282.1159">get_current_dir(self) -&gt; str</text><!--MD5=[b6dcce5e5ef3c84b0b048d11301373dd]
+class Game--><rect codeLine="41" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="169.6545" id="Game" style="stroke:#A80036;stroke-width:0.765;" width="263.67" x="1093.695" y="165.75"/><ellipse cx="1214.6925" cy="173.91" fill="#ADD1B2" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M1214.4216,177.225 Q1213.5291,177.225 1212.9473,176.8345 Q1212.3736,176.4361 1212.0867,175.7189 Q1211.8078,174.9938 1211.8078,174.0375 Q1211.8078,172.9617 1212.1425,172.1967 Q1212.4772,171.4238 1213.1306,171.0094 Q1213.7841,170.595 1214.7403,170.595 Q1215.1945,170.595 1215.5372,170.6906 Q1215.8798,170.7863 1216.2305,170.9695 L1215.8161,172.0533 Q1215.4973,171.8859 1215.2184,171.8222 Q1214.9475,171.7584 1214.7005,171.7584 Q1214.1028,171.7584 1213.7442,172.0373 Q1213.3856,172.3083 1213.2342,172.8103 Q1213.0828,173.3123 1213.0828,173.9817 Q1213.0828,175.0416 1213.4494,175.5516 Q1213.8159,176.0536 1214.6288,176.0536 Q1214.9316,176.0536 1215.2503,175.9739 Q1215.5691,175.8942 1215.9914,175.695 L1215.9914,176.8823 Q1215.6169,177.0577 1215.2105,177.1453 Q1214.812,177.225 1214.4216,177.225 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" lengthAdjust="spacing" textLength="17.34" x="1225.1475" y="176.2846">Game</text><line style="stroke:#A80036;stroke-width:0.765;" x1="1094.205" x2="1356.855" y1="182.07" y2="182.07"/><polygon fill="none" points="1099.305,185.13,1101.345,187.17,1099.305,189.21,1097.265,187.17" style="stroke:#B38D22;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="24.48" x="1103.895" y="190.107">_time: int</text><polygon fill="none" points="1099.305,192.7708,1101.345,194.8108,1099.305,196.8508,1097.265,194.8108" style="stroke:#B38D22;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="55.59" x="1103.895" y="197.7478">_inside_tiles: list[Tile]</text><polygon fill="none" points="1099.305,200.4115,1101.345,202.4515,1099.305,204.4915,1097.265,202.4515" style="stroke:#B38D22;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="59.67" x="1103.895" y="205.3886">_outside_tiles: list[Tile]</text><polygon fill="none" points="1099.305,208.0523,1101.345,210.0923,1099.305,212.1323,1097.265,210.0923" style="stroke:#B38D22;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="56.61" x="1103.895" y="213.0293">_dev_cards: list[Card]</text><polygon fill="none" points="1099.305,215.6931,1101.345,217.7331,1099.305,219.7731,1097.265,217.7331" style="stroke:#B38D22;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="79.05" x="1103.895" y="220.6701">_current_dev_cards: list[Card]</text><polygon fill="none" points="1099.305,223.3338,1101.345,225.3738,1099.305,227.4138,1097.265,225.3738" style="stroke:#B38D22;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="85.17" x="1103.895" y="228.3109">_current_dev_card: Card | None</text><polygon fill="none" points="1099.305,230.9746,1101.345,233.0146,1099.305,235.0546,1097.265,233.0146" style="stroke:#B38D22;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="31.62" x="1103.895" y="235.9516">_level: Level</text><line style="stroke:#A80036;stroke-width:0.765;" x1="1094.205" x2="1356.855" y1="239.6353" y2="239.6353"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="145.35" x="1103.895" y="247.6724">__init__(self, time: int, level: Level, dev_cards: list[Card])</text><ellipse cx="1099.305" cy="252.8861" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="40.29" x="1103.895" y="255.3131">setup() -&gt; None</text><ellipse cx="1099.305" cy="260.5269" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" text-decoration="underline" textLength="141.78" x="1103.895" y="262.9539">shuffle_decks(deck: list[Card | Tile]) -&gt; list[Card | Tile]</text><ellipse cx="1099.305" cy="268.1676" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="54.06" x="1103.895" y="270.5947">draw_tile(self) -&gt; Tile</text><ellipse cx="1099.305" cy="275.8084" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="182.07" x="1103.895" y="278.2354">move(self, entry_door: Door, exit_door: Door, new_tile: Tile) -&gt; None</text><ellipse cx="1099.305" cy="283.4492" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" text-decoration="underline" textLength="250.41" x="1103.895" y="285.8762">correct_tile_rotation(correct_door_position: TilePosition, new_tile: Tile, exit_door: Door) -&gt; Tile</text><ellipse cx="1099.305" cy="291.0899" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" text-decoration="underline" textLength="94.86" x="1103.895" y="293.517">get_tile_doors(tile: Tile) -&gt; list[Door]</text><ellipse cx="1099.305" cy="298.7307" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="107.1" x="1103.895" y="301.1577">tile_algorithm(self, new_tile: Tile) -&gt; bool</text><polygon fill="#FFFF44" points="1099.305,303.8214,1101.345,305.8614,1099.305,307.9014,1097.265,305.8614" style="stroke:#B38D22;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="117.3" x="1103.895" y="308.7985">_get_index_of_tile(self, target_tile: Tile) -&gt; int</text><ellipse cx="1099.305" cy="314.0122" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="35.19" x="1103.895" y="316.4392">pickup_item()</text><ellipse cx="1099.305" cy="321.653" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="146.88" x="1103.895" y="324.08">attack(self, zombie_count: int, attack_score: int) -&gt; None</text><ellipse cx="1099.305" cy="329.2937" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="51" x="1103.895" y="331.7208">cower(self) -&gt; None</text><!--MD5=[2cb47ba637a0d19583e6199456f6ad0b]
+class Player--><rect codeLine="63" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="131.4507" id="Player" style="stroke:#A80036;stroke-width:0.765;" width="210.12" x="1120.47" y="522.24"/><ellipse cx="1214.4375" cy="530.4" fill="#ADD1B2" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M1214.1666,533.715 Q1213.2741,533.715 1212.6923,533.3245 Q1212.1186,532.9261 1211.8317,532.2089 Q1211.5528,531.4838 1211.5528,530.5275 Q1211.5528,529.4517 1211.8875,528.6867 Q1212.2222,527.9138 1212.8756,527.4994 Q1213.5291,527.085 1214.4853,527.085 Q1214.9395,527.085 1215.2822,527.1806 Q1215.6248,527.2763 1215.9755,527.4595 L1215.5611,528.5433 Q1215.2423,528.3759 1214.9634,528.3122 Q1214.6925,528.2484 1214.4455,528.2484 Q1213.8478,528.2484 1213.4892,528.5273 Q1213.1306,528.7983 1212.9792,529.3003 Q1212.8278,529.8023 1212.8278,530.4717 Q1212.8278,531.5316 1213.1944,532.0416 Q1213.5609,532.5436 1214.3738,532.5436 Q1214.6766,532.5436 1214.9953,532.4639 Q1215.3141,532.3842 1215.7364,532.185 L1215.7364,533.3723 Q1215.3619,533.5477 1214.9555,533.6353 Q1214.557,533.715 1214.1666,533.715 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" lengthAdjust="spacing" textLength="17.85" x="1224.8925" y="532.7746">Player</text><line style="stroke:#A80036;stroke-width:0.765;" x1="1120.98" x2="1330.08" y1="538.56" y2="538.56"/><polygon fill="none" points="1126.08,541.62,1128.12,543.66,1126.08,545.7,1124.04,543.66" style="stroke:#B38D22;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="31.11" x="1130.67" y="546.597">_health : int</text><polygon fill="none" points="1126.08,549.2608,1128.12,551.3008,1126.08,553.3408,1124.04,551.3008" style="stroke:#B38D22;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="30.09" x="1130.67" y="554.2378">_attack : int</text><polygon fill="none" points="1126.08,556.9015,1128.12,558.9415,1126.08,560.9815,1124.04,558.9415" style="stroke:#B38D22;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="64.77" x="1130.67" y="561.8786">_player_items : list[Item]</text><polygon fill="none" points="1126.08,564.5423,1128.12,566.5823,1126.08,568.6223,1124.04,566.5823" style="stroke:#B38D22;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="35.19" x="1130.67" y="569.5193">_inside : bool</text><polygon fill="none" points="1126.08,572.1831,1128.12,574.2231,1126.08,576.2631,1124.04,574.2231" style="stroke:#B38D22;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="22.44" x="1130.67" y="577.1601">_x : float</text><polygon fill="none" points="1126.08,579.8238,1128.12,581.8638,1126.08,583.9038,1124.04,581.8638" style="stroke:#B38D22;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="22.44" x="1130.67" y="584.8009">_y : float</text><line style="stroke:#A80036;stroke-width:0.765;" x1="1120.98" x2="1330.08" y1="588.4846" y2="588.4846"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="196.86" x="1130.67" y="596.5216">__init__(self, health: int, attack: int, player_items: list[Item], x: float, y: float)</text><ellipse cx="1126.08" cy="601.7353" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="46.92" x="1130.67" y="604.1624">get_x(self) -&gt; float</text><ellipse cx="1126.08" cy="609.3761" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="46.92" x="1130.67" y="611.8031">get_y(self) -&gt; float</text><ellipse cx="1126.08" cy="617.0169" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="55.59" x="1130.67" y="619.4439">get_health(self) -&gt; int</text><ellipse cx="1126.08" cy="624.6576" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="66.3" x="1130.67" y="627.0847">get_is_inside(self) -&gt; bool</text><ellipse cx="1126.08" cy="632.2984" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="71.4" x="1130.67" y="634.7254">get_attack_score(self) -&gt; int</text><ellipse cx="1126.08" cy="639.9392" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="61.71" x="1130.67" y="642.3662">set_health(self) -&gt; None</text><ellipse cx="1126.08" cy="647.5799" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="116.79" x="1130.67" y="650.007">set_player_pos(self, x: float, y: float) -&gt; None</text><!--MD5=[eedde156c9dded963040b22578af45fa]
+class Level--><rect codeLine="81" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="108.5284" id="Level" style="stroke:#A80036;stroke-width:0.765;" width="169.83" x="947.325" y="366.18"/><ellipse cx="1022.6775" cy="374.34" fill="#ADD1B2" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M1022.4066,377.655 Q1021.5141,377.655 1020.9323,377.2645 Q1020.3586,376.8661 1020.0717,376.1489 Q1019.7928,375.4238 1019.7928,374.4675 Q1019.7928,373.3917 1020.1275,372.6267 Q1020.4622,371.8538 1021.1156,371.4394 Q1021.7691,371.025 1022.7253,371.025 Q1023.1795,371.025 1023.5222,371.1206 Q1023.8648,371.2163 1024.2155,371.3995 L1023.8011,372.4833 Q1023.4823,372.3159 1023.2034,372.2522 Q1022.9325,372.1884 1022.6855,372.1884 Q1022.0878,372.1884 1021.7292,372.4673 Q1021.3706,372.7383 1021.2192,373.2403 Q1021.0678,373.7423 1021.0678,374.4117 Q1021.0678,375.4716 1021.4344,375.9816 Q1021.8009,376.4836 1022.6138,376.4836 Q1022.9166,376.4836 1023.2353,376.4039 Q1023.5541,376.3242 1023.9764,376.125 L1023.9764,377.3123 Q1023.6019,377.4877 1023.1955,377.5753 Q1022.797,377.655 1022.4066,377.655 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" lengthAdjust="spacing" textLength="14.79" x="1033.1325" y="376.7146">Level</text><line style="stroke:#A80036;stroke-width:0.765;" x1="947.835" x2="1116.645" y1="382.5" y2="382.5"/><polygon fill="none" points="952.935,385.56,954.975,387.6,952.935,389.64,950.895,387.6" style="stroke:#B38D22;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="38.76" x="957.525" y="390.537">_tiles : list[Tile]</text><polygon fill="none" points="952.935,393.2008,954.975,395.2408,952.935,397.2808,950.895,395.2408" style="stroke:#B38D22;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="40.8" x="957.525" y="398.1778">_player : Player</text><line style="stroke:#A80036;stroke-width:0.765;" x1="947.835" x2="1116.645" y1="401.8615" y2="401.8615"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="108.63" x="957.525" y="409.8986">__init__(self, tiles: list[Tile], player: Player)</text><ellipse cx="952.935" cy="415.1123" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="70.38" x="957.525" y="417.5393">add_new_tile(self, tile: Tile)</text><ellipse cx="952.935" cy="422.7531" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="146.88" x="957.525" y="425.1801">check_if_tile_already_exists(self, x: float, y: float) -&gt; bool</text><ellipse cx="952.935" cy="430.3938" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="156.57" x="957.525" y="432.8209">heck_if_door_exist_near_cords(self, x: float, y: float) -&gt; bool</text><ellipse cx="952.935" cy="438.0346" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" text-decoration="underline" textLength="148.92" x="957.525" y="440.4616">get_door_info_on_tile(tile: Tile) -&gt; [dict[int, TilePosition]]</text><ellipse cx="952.935" cy="445.6753" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="84.66" x="957.525" y="448.1024">get_tile_player_is_on(self) -&gt; Tile</text><ellipse cx="952.935" cy="453.3161" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="136.68" x="957.525" y="455.7431">get_tile_by_cords(self, x: float, y: float) -&gt; Tile | bool</text><ellipse cx="952.935" cy="460.9569" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="64.77" x="957.525" y="463.3839">get_tile_count(self) -&gt; int</text><ellipse cx="952.935" cy="468.5976" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="65.28" x="957.525" y="471.0247">get_player(self) -&gt; Player</text><!--MD5=[18e4d9ca2a6cdced7b66e5fef94ef6f6]
+class Tile--><rect codeLine="102" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="146.7322" id="Tile" style="stroke:#A80036;stroke-width:0.765;" width="177.48" x="433.5" y="514.59"/><ellipse cx="514.9725" cy="522.75" fill="#ADD1B2" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M514.7016,526.065 Q513.8091,526.065 513.2273,525.6745 Q512.6536,525.2761 512.3667,524.5589 Q512.0878,523.8338 512.0878,522.8775 Q512.0878,521.8017 512.4225,521.0367 Q512.7572,520.2638 513.4106,519.8494 Q514.0641,519.435 515.0203,519.435 Q515.4745,519.435 515.8172,519.5306 Q516.1598,519.6263 516.5105,519.8095 L516.0961,520.8933 Q515.7773,520.7259 515.4984,520.6622 Q515.2275,520.5984 514.9805,520.5984 Q514.3828,520.5984 514.0242,520.8773 Q513.6656,521.1483 513.5142,521.6503 Q513.3628,522.1523 513.3628,522.8217 Q513.3628,523.8816 513.7294,524.3916 Q514.0959,524.8936 514.9088,524.8936 Q515.2116,524.8936 515.5303,524.8139 Q515.8491,524.7342 516.2714,524.535 L516.2714,525.7223 Q515.8969,525.8977 515.4905,525.9853 Q515.092,526.065 514.7016,526.065 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" lengthAdjust="spacing" textLength="10.2" x="525.4275" y="525.1246">Tile</text><line style="stroke:#A80036;stroke-width:0.765;" x1="434.01" x2="610.47" y1="530.91" y2="530.91"/><ellipse cx="439.11" cy="536.52" fill="none" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="37.23" x="443.7" y="538.947">tile_name : str</text><ellipse cx="439.11" cy="544.1608" fill="none" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="48.96" x="443.7" y="546.5878">tile_type : TileType</text><ellipse cx="439.11" cy="551.8015" fill="none" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="101.49" x="443.7" y="554.2286">tile_behaviour : AbstractTileBehaviour</text><polygon fill="none" points="439.11,556.8923,441.15,558.9323,439.11,560.9723,437.07,558.9323" style="stroke:#B38D22;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="85.17" x="443.7" y="561.8693">_tile_sides : list[AbstractTileSide]</text><polygon fill="none" points="439.11,564.5331,441.15,566.5731,439.11,568.6131,437.07,566.5731" style="stroke:#B38D22;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="22.44" x="443.7" y="569.5101">_x : float</text><polygon fill="none" points="439.11,572.1738,441.15,574.2138,439.11,576.2538,437.07,574.2138" style="stroke:#B38D22;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="22.44" x="443.7" y="577.1509">_y : float</text><line style="stroke:#A80036;stroke-width:0.765;" x1="434.01" x2="610.47" y1="580.8346" y2="580.8346"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="124.44" x="443.7" y="588.8716">__init__(self, tile_type: TileType, x: float, y: float)</text><polygon fill="#FFFF44" points="439.11,591.5353,441.15,593.5753,439.11,595.6153,437.07,593.5753" style="stroke:#B38D22;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="164.22" x="443.7" y="596.5124">_change_tile_side(self, tile_position: TilePosition, side) -&gt; None</text><ellipse cx="439.11" cy="601.7261" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="163.71" x="443.7" y="604.1531">rotate_tile(self, rotation_direction: RotationDirection) -&gt; None</text><ellipse cx="439.11" cy="609.3669" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="160.65" x="443.7" y="611.7939">get_door_index_from_position(self, door_position: int) -&gt; int</text><ellipse cx="439.11" cy="617.0076" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="145.86" x="443.7" y="619.4347">get_side_from_index(self, index: int) -&gt; AbstractTileSide</text><ellipse cx="439.11" cy="624.6484" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="46.92" x="443.7" y="627.0754">get_x(self) -&gt; float</text><ellipse cx="439.11" cy="632.2892" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="46.92" x="443.7" y="634.7162">get_y(self) -&gt; float</text><ellipse cx="439.11" cy="639.9299" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="97.41" x="443.7" y="642.357">set_pos(self, x: float, y: float) -&gt; None</text><ellipse cx="439.11" cy="647.5707" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="109.65" x="443.7" y="649.9977">get_tile_sides(self) -&gt; list[AbstractTileSide]</text><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="67.32" x="443.7" y="657.6385">__eq__(self, other) -&gt; bool</text><!--MD5=[b2355d4df8a62f2bc6c7e966a379414e]
+class RotationDirection--><rect codeLine="121" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="39.7615" id="RotationDirection" style="stroke:#A80036;stroke-width:0.765;" width="65.79" x="378.675" y="741.795"/><ellipse cx="386.325" cy="749.955" fill="#EB937F" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M384.4683,753.27 L384.4683,746.64 L388.373,746.64 L388.373,747.7875 L385.6795,747.7875 L385.6795,749.19 L388.2375,749.19 L388.2375,750.3375 L385.6795,750.3375 L385.6795,752.1225 L388.373,752.1225 L388.373,753.27 L384.4683,753.27 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" lengthAdjust="spacing" textLength="49.47" x="393.465" y="752.3296">RotationDirection</text><line style="stroke:#A80036;stroke-width:0.765;" x1="379.185" x2="443.955" y1="758.115" y2="758.115"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="15.81" x="381.735" y="766.152">Right,</text><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="10.2" x="381.735" y="773.7928">Left</text><line style="stroke:#A80036;stroke-width:0.765;" x1="379.185" x2="443.955" y1="777.4765" y2="777.4765"/><!--MD5=[975af3dd17f824e608bc0868e5ce5c98]
+class TilePosition--><rect codeLine="126" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="55.0431" id="TilePosition" style="stroke:#A80036;stroke-width:0.765;" width="48.96" x="243.78" y="861.9"/><ellipse cx="251.43" cy="870.06" fill="#EB937F" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M249.5733,873.375 L249.5733,866.745 L253.478,866.745 L253.478,867.8925 L250.7845,867.8925 L250.7845,869.295 L253.3425,869.295 L253.3425,870.4425 L250.7845,870.4425 L250.7845,872.2275 L253.478,872.2275 L253.478,873.375 L249.5733,873.375 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" lengthAdjust="spacing" textLength="32.64" x="258.57" y="872.4346">TilePosition</text><line style="stroke:#A80036;stroke-width:0.765;" x1="244.29" x2="292.23" y1="878.22" y2="878.22"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="24.99" x="246.84" y="886.257">North = 0</text><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="19.89" x="246.84" y="893.8978">East = 1</text><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="24.99" x="246.84" y="901.5386">South = 2</text><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="21.93" x="246.84" y="909.1793">West = 3</text><line style="stroke:#A80036;stroke-width:0.765;" x1="244.29" x2="292.23" y1="912.8631" y2="912.8631"/><!--MD5=[67dc9d447ac5dbb625e3d503755a5c3a]
+class TileType--><rect codeLine="133" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="139.0914" id="TileType" style="stroke:#A80036;stroke-width:0.765;" width="41.31" x="462.315" y="692.07"/><ellipse cx="470.424" cy="700.23" fill="#EB937F" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M468.5673,703.545 L468.5673,696.915 L472.472,696.915 L472.472,698.0625 L469.7785,698.0625 L469.7785,699.465 L472.3365,699.465 L472.3365,700.6125 L469.7785,700.6125 L469.7785,702.3975 L472.472,702.3975 L472.472,703.545 L468.5673,703.545 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" lengthAdjust="spacing" textLength="23.97" x="477.666" y="702.6046">TileType</text><line style="stroke:#A80036;stroke-width:0.765;" x1="462.825" x2="503.115" y1="708.39" y2="708.39"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="16.83" x="465.375" y="716.427">Foyer,</text><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="26.52" x="465.375" y="724.0678">Bedroom,</text><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="35.19" x="465.375" y="731.7086">DiningRoom,</text><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="28.56" x="465.375" y="739.3493">Bathroom,</text><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="21.42" x="465.375" y="746.9901">Kitchen,</text><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="22.44" x="465.375" y="754.6309">Storage,</text><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="30.09" x="465.375" y="762.2716">EvilTemple,</text><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="15.3" x="465.375" y="769.9124">Patio,</text><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="16.83" x="465.375" y="777.5531">Yard1,</text><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="16.83" x="465.375" y="785.1939">Yard2,</text><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="16.83" x="465.375" y="792.8347">Yard3,</text><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="20.91" x="465.375" y="800.4754">Garage,</text><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="31.11" x="465.375" y="808.1162">SittingArea,</text><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="21.42" x="465.375" y="815.757">Garden,</text><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="28.05" x="465.375" y="823.3977">Graveyard</text><line style="stroke:#A80036;stroke-width:0.765;" x1="462.825" x2="503.115" y1="827.0814" y2="827.0814"/><!--MD5=[ff61424299de7fbd1b7bbdfe7c644dfd]
+class Door--><rect codeLine="151" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="32.1208" id="Door" style="stroke:#A80036;stroke-width:0.765;" width="95.88" x="16.32" y="873.375"/><ellipse cx="54.9525" cy="881.535" fill="#ADD1B2" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M54.6816,884.85 Q53.7891,884.85 53.2073,884.4595 Q52.6336,884.0611 52.3467,883.3439 Q52.0678,882.6188 52.0678,881.6625 Q52.0678,880.5867 52.4025,879.8217 Q52.7372,879.0488 53.3906,878.6344 Q54.0441,878.22 55.0003,878.22 Q55.4545,878.22 55.7972,878.3156 Q56.1398,878.4113 56.4905,878.5945 L56.0761,879.6783 Q55.7573,879.5109 55.4784,879.4472 Q55.2075,879.3834 54.9605,879.3834 Q54.3628,879.3834 54.0042,879.6623 Q53.6456,879.9333 53.4942,880.4353 Q53.3428,880.9373 53.3428,881.6067 Q53.3428,882.6666 53.7094,883.1766 Q54.0759,883.6786 54.8888,883.6786 Q55.1916,883.6786 55.5103,883.5989 Q55.8291,883.5192 56.2514,883.32 L56.2514,884.5073 Q55.8769,884.6827 55.4705,884.7703 Q55.072,884.85 54.6816,884.85 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" lengthAdjust="spacing" textLength="14.28" x="65.4075" y="883.9096">Door</text><line style="stroke:#A80036;stroke-width:0.765;" x1="16.83" x2="111.69" y1="889.695" y2="889.695"/><line style="stroke:#A80036;stroke-width:0.765;" x1="16.83" x2="111.69" y1="893.775" y2="893.775"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="89.76" x="19.38" y="901.812">__init__(self, tile_side: TilePosition)</text><!--MD5=[5471bdd84e4725cef4e89c1b203e5f23]
+class AbstractTileSide--><rect codeLine="159" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="55.0431" id="AbstractTileSide" style="stroke:#A80036;stroke-width:0.765;" width="103.02" x="226.95" y="734.145"/><ellipse cx="254.8725" cy="742.305" fill="#A9DCDF" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M252.4102,745.2375 L254.1155,738.6075 L255.7172,738.6075 L257.4384,745.2375 L256.1794,745.2375 L255.8048,743.7075 L254.0119,743.7075 L253.6294,745.2375 L252.4102,745.2375 Z M254.6573,740.9344 L254.2748,742.6078 L255.5578,742.6078 L255.1913,740.9344 Q255.1195,740.6077 255.0558,740.2969 Q254.992,739.9861 254.9203,739.6514 Q254.8645,739.9861 254.7928,740.2969 Q254.7211,740.6077 254.6573,740.9344 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" font-style="italic" lengthAdjust="spacing" textLength="42.84" x="265.3275" y="744.6796">AbstractTileSide</text><line style="stroke:#A80036;stroke-width:0.765;" x1="227.46" x2="329.46" y1="750.465" y2="750.465"/><ellipse cx="232.56" cy="756.075" fill="none" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="80.58" x="237.15" y="758.502">original_tile_side : TilePosition</text><line style="stroke:#A80036;stroke-width:0.765;" x1="227.46" x2="329.46" y1="762.1858" y2="762.1858"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="89.76" x="237.15" y="770.2228">__init__(self, tile_side: TilePosition)</text><ellipse cx="232.56" cy="775.4365" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="84.15" x="237.15" y="777.8636">get_tile_side(self) -&gt; TilePosition</text><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="67.32" x="237.15" y="785.5043">__eq__(self, other) -&gt; bool</text><polygon fill="none" points="247.6508,789.1881,242.4222,798.6457,237.6655,793.3208" style="stroke:#A80036;stroke-width:0.51;"/><line style="stroke:#A80036;stroke-width:0.51;" x1="240.0438" x2="235.62" y1="795.9832" y2="799.935"/><line style="stroke:#A80036;stroke-width:0.51;" x1="313.6462" x2="326.9151" y1="734.145" y2="723.7665"/><line style="stroke:#A80036;stroke-width:0.51;" x1="276.2702" x2="274.9155" y1="789.1881" y2="806.2131"/><!--MD5=[08dfe6c59ed9ecb4018cfd2b80128be4]
+class Wall--><rect codeLine="155" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="32.1208" id="Wall" style="stroke:#A80036;stroke-width:0.765;" width="95.88" x="130.05" y="873.375"/><ellipse cx="169.7025" cy="881.535" fill="#ADD1B2" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M169.4316,884.85 Q168.5391,884.85 167.9573,884.4595 Q167.3836,884.0611 167.0967,883.3439 Q166.8178,882.6188 166.8178,881.6625 Q166.8178,880.5867 167.1525,879.8217 Q167.4872,879.0488 168.1406,878.6344 Q168.7941,878.22 169.7503,878.22 Q170.2045,878.22 170.5472,878.3156 Q170.8898,878.4113 171.2405,878.5945 L170.8261,879.6783 Q170.5073,879.5109 170.2284,879.4472 Q169.9575,879.3834 169.7105,879.3834 Q169.1128,879.3834 168.7542,879.6623 Q168.3956,879.9333 168.2442,880.4353 Q168.0928,880.9373 168.0928,881.6067 Q168.0928,882.6666 168.4594,883.1766 Q168.8259,883.6786 169.6388,883.6786 Q169.9416,883.6786 170.2603,883.5989 Q170.5791,883.5192 171.0014,883.32 L171.0014,884.5073 Q170.6269,884.6827 170.2205,884.7703 Q169.822,884.85 169.4316,884.85 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" lengthAdjust="spacing" textLength="12.24" x="180.1575" y="883.9096">Wall</text><line style="stroke:#A80036;stroke-width:0.765;" x1="130.56" x2="225.42" y1="889.695" y2="889.695"/><line style="stroke:#A80036;stroke-width:0.765;" x1="130.56" x2="225.42" y1="893.775" y2="893.775"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="89.76" x="133.11" y="901.812">__init__(self, tile_side: TilePosition)</text><!--MD5=[d02f6cf2bd3bf09f44ff4858807878e8]
+class AbstractTileBehaviour--><rect codeLine="166" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="32.1208" id="AbstractTileBehaviour" style="stroke:#A80036;stroke-width:0.765;" width="75.99" x="551.055" y="745.62"/><ellipse cx="558.705" cy="753.78" fill="#A9DCDF" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M556.2427,756.7125 L557.948,750.0825 L559.5497,750.0825 L561.2709,756.7125 L560.0119,756.7125 L559.6373,755.1825 L557.8444,755.1825 L557.4619,756.7125 L556.2427,756.7125 Z M558.4898,752.4094 L558.1073,754.0828 L559.3903,754.0828 L559.0238,752.4094 Q558.952,752.0827 558.8883,751.7719 Q558.8245,751.4611 558.7528,751.1264 Q558.697,751.4611 558.6253,751.7719 Q558.5536,752.0827 558.4898,752.4094 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" font-style="italic" lengthAdjust="spacing" textLength="59.67" x="565.845" y="756.1546">AbstractTileBehaviour</text><line style="stroke:#A80036;stroke-width:0.765;" x1="551.565" x2="626.535" y1="761.94" y2="761.94"/><line style="stroke:#A80036;stroke-width:0.765;" x1="551.565" x2="626.535" y1="766.02" y2="766.02"/><ellipse cx="556.665" cy="771.63" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" font-style="italic" lengthAdjust="spacing" textLength="27.03" x="561.255" y="774.057">action(self)</text><polygon fill="none" points="586.6262,777.7408,588.6341,788.3593,581.5741,787.2938" style="stroke:#A80036;stroke-width:0.51;"/><line style="stroke:#A80036;stroke-width:0.51;" x1="585.1041" x2="584.97" y1="787.8266" y2="788.715"/><line style="stroke:#A80036;stroke-width:0.51;" x1="582.9543" x2="579.0132" y1="745.62" y2="735.2364"/><!--MD5=[b1da36c0937300aca0026f06509bd95c]
+class EvilTempleBehaviour--><rect codeLine="170" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="32.1208" id="EvilTempleBehaviour" style="stroke:#A80036;stroke-width:0.765;" width="76.5" x="561" y="873.375"/><ellipse cx="568.65" cy="881.535" fill="#ADD1B2" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M568.3791,884.85 Q567.4866,884.85 566.9048,884.4595 Q566.3311,884.0611 566.0442,883.3439 Q565.7653,882.6188 565.7653,881.6625 Q565.7653,880.5867 566.1,879.8217 Q566.4347,879.0488 567.0881,878.6344 Q567.7416,878.22 568.6978,878.22 Q569.152,878.22 569.4947,878.3156 Q569.8373,878.4113 570.188,878.5945 L569.7736,879.6783 Q569.4548,879.5109 569.1759,879.4472 Q568.905,879.3834 568.658,879.3834 Q568.0603,879.3834 567.7017,879.6623 Q567.3431,879.9333 567.1917,880.4353 Q567.0403,880.9373 567.0403,881.6067 Q567.0403,882.6666 567.4069,883.1766 Q567.7734,883.6786 568.5863,883.6786 Q568.8891,883.6786 569.2078,883.5989 Q569.5266,883.5192 569.9489,883.32 L569.9489,884.5073 Q569.5744,884.6827 569.168,884.7703 Q568.7695,884.85 568.3791,884.85 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" lengthAdjust="spacing" textLength="60.18" x="575.79" y="883.9096">EvilTempleBehaviour</text><line style="stroke:#A80036;stroke-width:0.765;" x1="561.51" x2="636.99" y1="889.695" y2="889.695"/><line style="stroke:#A80036;stroke-width:0.765;" x1="561.51" x2="636.99" y1="893.775" y2="893.775"/><ellipse cx="566.61" cy="899.385" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="48.96" x="571.2" y="901.812">action(self) -&gt; Item</text><!--MD5=[bade5718fa9874f446525508bf5d5c4b]
+class GraveyardBehaviour--><rect codeLine="174" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="32.1208" id="GraveyardBehaviour" style="stroke:#A80036;stroke-width:0.765;" width="75.48" x="655.35" y="873.375"/><ellipse cx="663" cy="881.535" fill="#ADD1B2" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M662.7291,884.85 Q661.8366,884.85 661.2548,884.4595 Q660.6811,884.0611 660.3942,883.3439 Q660.1153,882.6188 660.1153,881.6625 Q660.1153,880.5867 660.45,879.8217 Q660.7847,879.0488 661.4381,878.6344 Q662.0916,878.22 663.0478,878.22 Q663.502,878.22 663.8447,878.3156 Q664.1873,878.4113 664.538,878.5945 L664.1236,879.6783 Q663.8048,879.5109 663.5259,879.4472 Q663.255,879.3834 663.008,879.3834 Q662.4103,879.3834 662.0517,879.6623 Q661.6931,879.9333 661.5417,880.4353 Q661.3903,880.9373 661.3903,881.6067 Q661.3903,882.6666 661.7569,883.1766 Q662.1234,883.6786 662.9363,883.6786 Q663.2391,883.6786 663.5578,883.5989 Q663.8766,883.5192 664.2989,883.32 L664.2989,884.5073 Q663.9244,884.6827 663.518,884.7703 Q663.1195,884.85 662.7291,884.85 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" lengthAdjust="spacing" textLength="59.16" x="670.14" y="883.9096">GraveyardBehaviour</text><line style="stroke:#A80036;stroke-width:0.765;" x1="655.86" x2="730.32" y1="889.695" y2="889.695"/><line style="stroke:#A80036;stroke-width:0.765;" x1="655.86" x2="730.32" y1="893.775" y2="893.775"/><ellipse cx="660.96" cy="899.385" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="43.86" x="665.55" y="901.812">action(self) -&gt; str</text><!--MD5=[d36554d96218b6548c5a2036fe0529d3]
+class GardenBehaviour--><rect codeLine="178" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="32.1208" id="GardenBehaviour" style="stroke:#A80036;stroke-width:0.765;" width="66.81" x="748.935" y="873.375"/><ellipse cx="756.585" cy="881.535" fill="#ADD1B2" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M756.3141,884.85 Q755.4216,884.85 754.8398,884.4595 Q754.2661,884.0611 753.9792,883.3439 Q753.7003,882.6188 753.7003,881.6625 Q753.7003,880.5867 754.035,879.8217 Q754.3697,879.0488 755.0231,878.6344 Q755.6766,878.22 756.6328,878.22 Q757.087,878.22 757.4297,878.3156 Q757.7723,878.4113 758.123,878.5945 L757.7086,879.6783 Q757.3898,879.5109 757.1109,879.4472 Q756.84,879.3834 756.593,879.3834 Q755.9953,879.3834 755.6367,879.6623 Q755.2781,879.9333 755.1267,880.4353 Q754.9753,880.9373 754.9753,881.6067 Q754.9753,882.6666 755.3419,883.1766 Q755.7084,883.6786 756.5213,883.6786 Q756.8241,883.6786 757.1428,883.5989 Q757.4616,883.5192 757.8839,883.32 L757.8839,884.5073 Q757.5094,884.6827 757.103,884.7703 Q756.7045,884.85 756.3141,884.85 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" lengthAdjust="spacing" textLength="50.49" x="763.725" y="883.9096">GardenBehaviour</text><line style="stroke:#A80036;stroke-width:0.765;" x1="749.445" x2="815.235" y1="889.695" y2="889.695"/><line style="stroke:#A80036;stroke-width:0.765;" x1="749.445" x2="815.235" y1="893.775" y2="893.775"/><ellipse cx="754.545" cy="899.385" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="43.86" x="759.135" y="901.812">action(self) -&gt; int</text><!--MD5=[583b3f6c5eb1f9e7d6ee15a9ea7b9eb7]
+class KitchenBehaviour--><rect codeLine="182" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="32.1208" id="KitchenBehaviour" style="stroke:#A80036;stroke-width:0.765;" width="66.3" x="310.59" y="873.375"/><ellipse cx="318.24" cy="881.535" fill="#ADD1B2" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M317.9691,884.85 Q317.0766,884.85 316.4948,884.4595 Q315.9211,884.0611 315.6342,883.3439 Q315.3553,882.6188 315.3553,881.6625 Q315.3553,880.5867 315.69,879.8217 Q316.0247,879.0488 316.6781,878.6344 Q317.3316,878.22 318.2878,878.22 Q318.742,878.22 319.0847,878.3156 Q319.4273,878.4113 319.778,878.5945 L319.3636,879.6783 Q319.0448,879.5109 318.7659,879.4472 Q318.495,879.3834 318.248,879.3834 Q317.6503,879.3834 317.2917,879.6623 Q316.9331,879.9333 316.7817,880.4353 Q316.6303,880.9373 316.6303,881.6067 Q316.6303,882.6666 316.9969,883.1766 Q317.3634,883.6786 318.1763,883.6786 Q318.4791,883.6786 318.7978,883.5989 Q319.1166,883.5192 319.5389,883.32 L319.5389,884.5073 Q319.1644,884.6827 318.758,884.7703 Q318.3595,884.85 317.9691,884.85 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" lengthAdjust="spacing" textLength="49.98" x="325.38" y="883.9096">KitchenBehaviour</text><line style="stroke:#A80036;stroke-width:0.765;" x1="311.1" x2="376.38" y1="889.695" y2="889.695"/><line style="stroke:#A80036;stroke-width:0.765;" x1="311.1" x2="376.38" y1="893.775" y2="893.775"/><ellipse cx="316.2" cy="899.385" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="43.86" x="320.79" y="901.812">action(self) -&gt; int</text><!--MD5=[59f797092e142f27551f0b1aedf81f88]
+class StorageBehavior--><rect codeLine="186" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="32.1208" id="StorageBehavior" style="stroke:#A80036;stroke-width:0.765;" width="64.26" x="394.74" y="873.375"/><ellipse cx="402.39" cy="881.535" fill="#ADD1B2" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M402.1191,884.85 Q401.2266,884.85 400.6448,884.4595 Q400.0711,884.0611 399.7842,883.3439 Q399.5053,882.6188 399.5053,881.6625 Q399.5053,880.5867 399.84,879.8217 Q400.1747,879.0488 400.8281,878.6344 Q401.4816,878.22 402.4378,878.22 Q402.892,878.22 403.2347,878.3156 Q403.5773,878.4113 403.928,878.5945 L403.5136,879.6783 Q403.1948,879.5109 402.9159,879.4472 Q402.645,879.3834 402.398,879.3834 Q401.8003,879.3834 401.4417,879.6623 Q401.0831,879.9333 400.9317,880.4353 Q400.7803,880.9373 400.7803,881.6067 Q400.7803,882.6666 401.1469,883.1766 Q401.5134,883.6786 402.3263,883.6786 Q402.6291,883.6786 402.9478,883.5989 Q403.2666,883.5192 403.6889,883.32 L403.6889,884.5073 Q403.3144,884.6827 402.908,884.7703 Q402.5095,884.85 402.1191,884.85 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" lengthAdjust="spacing" textLength="47.94" x="409.53" y="883.9096">StorageBehavior</text><line style="stroke:#A80036;stroke-width:0.765;" x1="395.25" x2="458.49" y1="889.695" y2="889.695"/><line style="stroke:#A80036;stroke-width:0.765;" x1="395.25" x2="458.49" y1="893.775" y2="893.775"/><ellipse cx="400.35" cy="899.385" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="43.86" x="404.94" y="901.812">action(self) -&gt; str</text><!--MD5=[9f0dad1bafedcb16f6d29789f4aa4b48]
+class DefaultBehaviour--><rect codeLine="190" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="32.1208" id="DefaultBehaviour" style="stroke:#A80036;stroke-width:0.765;" width="66.3" x="476.85" y="873.375"/><ellipse cx="484.5" cy="881.535" fill="#ADD1B2" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M484.2291,884.85 Q483.3366,884.85 482.7548,884.4595 Q482.1811,884.0611 481.8942,883.3439 Q481.6153,882.6188 481.6153,881.6625 Q481.6153,880.5867 481.95,879.8217 Q482.2847,879.0488 482.9381,878.6344 Q483.5916,878.22 484.5478,878.22 Q485.002,878.22 485.3447,878.3156 Q485.6873,878.4113 486.038,878.5945 L485.6236,879.6783 Q485.3048,879.5109 485.0259,879.4472 Q484.755,879.3834 484.508,879.3834 Q483.9103,879.3834 483.5517,879.6623 Q483.1931,879.9333 483.0417,880.4353 Q482.8903,880.9373 482.8903,881.6067 Q482.8903,882.6666 483.2569,883.1766 Q483.6234,883.6786 484.4363,883.6786 Q484.7391,883.6786 485.0578,883.5989 Q485.3766,883.5192 485.7989,883.32 L485.7989,884.5073 Q485.4244,884.6827 485.018,884.7703 Q484.6195,884.85 484.2291,884.85 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" lengthAdjust="spacing" textLength="49.98" x="491.64" y="883.9096">DefaultBehaviour</text><line style="stroke:#A80036;stroke-width:0.765;" x1="477.36" x2="542.64" y1="889.695" y2="889.695"/><line style="stroke:#A80036;stroke-width:0.765;" x1="477.36" x2="542.64" y1="893.775" y2="893.775"/><ellipse cx="482.46" cy="899.385" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="51" x="487.05" y="901.812">action(self) -&gt; None</text><!--MD5=[44a1b4afaef76c16e6c9ec4990ad0c8d]
+class Item--><rect codeLine="198" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="93.2469" id="Item" style="stroke:#A80036;stroke-width:0.765;" width="146.37" x="1152.345" y="956.76"/><ellipse cx="1216.7325" cy="964.92" fill="#ADD1B2" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M1216.4616,968.235 Q1215.5691,968.235 1214.9873,967.8445 Q1214.4136,967.4461 1214.1267,966.7289 Q1213.8478,966.0038 1213.8478,965.0475 Q1213.8478,963.9717 1214.1825,963.2067 Q1214.5172,962.4338 1215.1706,962.0194 Q1215.8241,961.605 1216.7803,961.605 Q1217.2345,961.605 1217.5772,961.7006 Q1217.9198,961.7963 1218.2705,961.9795 L1217.8561,963.0633 Q1217.5373,962.8959 1217.2584,962.8322 Q1216.9875,962.7684 1216.7405,962.7684 Q1216.1428,962.7684 1215.7842,963.0473 Q1215.4256,963.3183 1215.2742,963.8203 Q1215.1228,964.3223 1215.1228,964.9917 Q1215.1228,966.0516 1215.4894,966.5616 Q1215.8559,967.0636 1216.6688,967.0636 Q1216.9716,967.0636 1217.2903,966.9839 Q1217.6091,966.9042 1218.0314,966.705 L1218.0314,967.8923 Q1217.6569,968.0677 1217.2505,968.1553 Q1216.852,968.235 1216.4616,968.235 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" lengthAdjust="spacing" textLength="13.26" x="1227.1875" y="967.2946">Item</text><line style="stroke:#A80036;stroke-width:0.765;" x1="1152.855" x2="1298.205" y1="973.08" y2="973.08"/><ellipse cx="1157.955" cy="978.69" fill="none" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="40.8" x="1162.545" y="981.117">item_name : str</text><ellipse cx="1157.955" cy="986.3308" fill="none" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="132.09" x="1162.545" y="988.7578">primary_item_behaviour : AbstractItemBehaviour</text><ellipse cx="1157.955" cy="993.9715" fill="none" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="133.11" x="1162.545" y="996.3986">optional_item_behaviour : AbstractItemBehaviour</text><ellipse cx="1157.955" cy="1001.6123" fill="none" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="82.62" x="1162.545" y="1004.0393">combo_item : ItemType | None</text><ellipse cx="1157.955" cy="1009.2531" fill="none" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="104.04" x="1162.545" y="1011.6801">second_combo_item : ItemType | None</text><ellipse cx="1157.955" cy="1016.8938" fill="none" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="43.86" x="1162.545" y="1019.3209">uses : int | None</text><ellipse cx="1157.955" cy="1024.5346" fill="none" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="55.59" x="1162.545" y="1026.9616">item_type : ItemType</text><line style="stroke:#A80036;stroke-width:0.765;" x1="1152.855" x2="1298.205" y1="1030.6453" y2="1030.6453"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="88.23" x="1162.545" y="1038.6824">__init__(self, item_type: ItemType)</text><ellipse cx="1157.955" cy="1043.8961" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="98.43" x="1162.545" y="1046.3231">action(self) -&gt; AbstractItemBehaviour</text><!--MD5=[d70ec2599807b838f67ad031716e5dfb]
+class ItemType--><rect codeLine="210" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="93.2469" id="ItemType" style="stroke:#A80036;stroke-width:0.765;" width="43.35" x="1306.875" y="1080.69"/><ellipse cx="1314.525" cy="1088.85" fill="#EB937F" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M1312.6683,1092.165 L1312.6683,1085.535 L1316.573,1085.535 L1316.573,1086.6825 L1313.8795,1086.6825 L1313.8795,1088.085 L1316.4375,1088.085 L1316.4375,1089.2325 L1313.8795,1089.2325 L1313.8795,1091.0175 L1316.573,1091.0175 L1316.573,1092.165 L1312.6683,1092.165 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" lengthAdjust="spacing" textLength="27.03" x="1321.665" y="1091.2246">ItemType</text><line style="stroke:#A80036;stroke-width:0.765;" x1="1307.385" x2="1349.715" y1="1097.01" y2="1097.01"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="9.18" x="1309.935" y="1105.047">Oil,</text><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="24.48" x="1309.935" y="1112.6878">Gasoline,</text><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="33.15" x="1309.935" y="1120.3286">BoardWNail,</text><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="31.62" x="1309.935" y="1127.9693">CanOfSoda,</text><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="34.17" x="1309.935" y="1135.6101">GrislyFemur,</text><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="24.99" x="1309.935" y="1143.2509">GolfClub,</text><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="19.89" x="1309.935" y="1150.8916">Candle,</text><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="27.03" x="1309.935" y="1158.5324">Chainsaw,</text><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="22.44" x="1309.935" y="1166.1731">Machete</text><line style="stroke:#A80036;stroke-width:0.765;" x1="1307.385" x2="1349.715" y1="1169.8569" y2="1169.8569"/><!--MD5=[4247fde05361240264cb4daeab3fa5f2]
+class AbstractItemBehaviour--><rect codeLine="222" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="32.1208" id="AbstractItemBehaviour" style="stroke:#A80036;stroke-width:0.765;" width="79.56" x="1185.75" y="1111.29"/><ellipse cx="1193.4" cy="1119.45" fill="#A9DCDF" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M1190.9377,1122.3825 L1192.643,1115.7525 L1194.2447,1115.7525 L1195.9659,1122.3825 L1194.7069,1122.3825 L1194.3323,1120.8525 L1192.5394,1120.8525 L1192.1569,1122.3825 L1190.9377,1122.3825 Z M1193.1848,1118.0794 L1192.8023,1119.7528 L1194.0853,1119.7528 L1193.7188,1118.0794 Q1193.647,1117.7527 1193.5833,1117.4419 Q1193.5195,1117.1311 1193.4478,1116.7964 Q1193.392,1117.1311 1193.3203,1117.4419 Q1193.2486,1117.7527 1193.1848,1118.0794 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" font-style="italic" lengthAdjust="spacing" textLength="63.24" x="1200.54" y="1121.8246">AbstractItemBehaviour</text><line style="stroke:#A80036;stroke-width:0.765;" x1="1186.26" x2="1264.8" y1="1127.61" y2="1127.61"/><line style="stroke:#A80036;stroke-width:0.765;" x1="1186.26" x2="1264.8" y1="1131.69" y2="1131.69"/><ellipse cx="1191.36" cy="1137.3" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" font-style="italic" lengthAdjust="spacing" textLength="27.03" x="1195.95" y="1139.727">action(self)</text><polygon fill="none" points="1225.53,1143.4108,1229.1,1153.6108,1221.96,1153.6108" style="stroke:#A80036;stroke-width:0.51;"/><line style="stroke:#A80036;stroke-width:0.51;" x1="1225.53" x2="1225.53" y1="1153.6108" y2="1154.385"/><line style="stroke:#A80036;stroke-width:0.51;" x1="1225.53" x2="1225.53" y1="1111.29" y2="1101.0798"/><!--MD5=[1b2fd50ccffb4d0b70a153a85073cb21]
+class NegativeItemBehaviour--><rect codeLine="226" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="47.4023" id="NegativeItemBehaviour" style="stroke:#A80036;stroke-width:0.765;" width="84.15" x="1083.495" y="1204.62"/><ellipse cx="1091.145" cy="1212.78" fill="#ADD1B2" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M1090.8741,1216.095 Q1089.9816,1216.095 1089.3998,1215.7045 Q1088.8261,1215.3061 1088.5392,1214.5889 Q1088.2603,1213.8638 1088.2603,1212.9075 Q1088.2603,1211.8317 1088.595,1211.0667 Q1088.9297,1210.2938 1089.5831,1209.8794 Q1090.2366,1209.465 1091.1928,1209.465 Q1091.647,1209.465 1091.9897,1209.5606 Q1092.3323,1209.6563 1092.683,1209.8395 L1092.2686,1210.9233 Q1091.9498,1210.7559 1091.6709,1210.6922 Q1091.4,1210.6284 1091.153,1210.6284 Q1090.5553,1210.6284 1090.1967,1210.9073 Q1089.8381,1211.1783 1089.6867,1211.6803 Q1089.5353,1212.1823 1089.5353,1212.8517 Q1089.5353,1213.9116 1089.9019,1214.4216 Q1090.2684,1214.9236 1091.0813,1214.9236 Q1091.3841,1214.9236 1091.7028,1214.8439 Q1092.0216,1214.7642 1092.4439,1214.565 L1092.4439,1215.7523 Q1092.0694,1215.9277 1091.663,1216.0153 Q1091.2645,1216.095 1090.8741,1216.095 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" lengthAdjust="spacing" textLength="67.83" x="1098.285" y="1215.1546">NegativeItemBehaviour</text><line style="stroke:#A80036;stroke-width:0.765;" x1="1084.005" x2="1167.135" y1="1220.94" y2="1220.94"/><ellipse cx="1089.105" cy="1226.55" fill="none" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="33.15" x="1093.695" y="1228.977">damage : int</text><line style="stroke:#A80036;stroke-width:0.765;" x1="1084.005" x2="1167.135" y1="1232.6608" y2="1232.6608"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="65.79" x="1093.695" y="1240.6978">__init__(self, damage: int)</text><ellipse cx="1089.105" cy="1245.9115" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="43.86" x="1093.695" y="1248.3386">action(self) -&gt; int</text><!--MD5=[9e70b89395433cf98fbec9444a16a802]
+class PassiveItemBehaviour--><rect codeLine="232" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="32.1208" id="PassiveItemBehaviour" style="stroke:#A80036;stroke-width:0.765;" width="80.07" x="1185.495" y="1212.27"/><ellipse cx="1193.145" cy="1220.43" fill="#ADD1B2" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M1192.8741,1223.745 Q1191.9816,1223.745 1191.3998,1223.3545 Q1190.8261,1222.9561 1190.5392,1222.2389 Q1190.2603,1221.5138 1190.2603,1220.5575 Q1190.2603,1219.4817 1190.595,1218.7167 Q1190.9297,1217.9438 1191.5831,1217.5294 Q1192.2366,1217.115 1193.1928,1217.115 Q1193.647,1217.115 1193.9897,1217.2106 Q1194.3323,1217.3063 1194.683,1217.4895 L1194.2686,1218.5733 Q1193.9498,1218.4059 1193.6709,1218.3422 Q1193.4,1218.2784 1193.153,1218.2784 Q1192.5553,1218.2784 1192.1967,1218.5573 Q1191.8381,1218.8283 1191.6867,1219.3303 Q1191.5353,1219.8323 1191.5353,1220.5017 Q1191.5353,1221.5616 1191.9019,1222.0716 Q1192.2684,1222.5736 1193.0813,1222.5736 Q1193.3841,1222.5736 1193.7028,1222.4939 Q1194.0216,1222.4142 1194.4439,1222.215 L1194.4439,1223.4023 Q1194.0694,1223.5777 1193.663,1223.6653 Q1193.2645,1223.745 1192.8741,1223.745 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" lengthAdjust="spacing" textLength="63.75" x="1200.285" y="1222.8046">PassiveItemBehaviour</text><line style="stroke:#A80036;stroke-width:0.765;" x1="1186.005" x2="1265.055" y1="1228.59" y2="1228.59"/><line style="stroke:#A80036;stroke-width:0.765;" x1="1186.005" x2="1265.055" y1="1232.67" y2="1232.67"/><ellipse cx="1191.105" cy="1238.28" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="51" x="1195.695" y="1240.707">action(self) -&gt; None</text><!--MD5=[93c4dcf7c14913a981bf1fc8306fa004]
+class PositiveItemBehaviour--><rect codeLine="236" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="47.4023" id="PositiveItemBehaviour" style="stroke:#A80036;stroke-width:0.765;" width="80.58" x="1283.67" y="1204.62"/><ellipse cx="1291.32" cy="1212.78" fill="#ADD1B2" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M1291.0491,1216.095 Q1290.1566,1216.095 1289.5748,1215.7045 Q1289.0011,1215.3061 1288.7142,1214.5889 Q1288.4353,1213.8638 1288.4353,1212.9075 Q1288.4353,1211.8317 1288.77,1211.0667 Q1289.1047,1210.2938 1289.7581,1209.8794 Q1290.4116,1209.465 1291.3678,1209.465 Q1291.822,1209.465 1292.1647,1209.5606 Q1292.5073,1209.6563 1292.858,1209.8395 L1292.4436,1210.9233 Q1292.1248,1210.7559 1291.8459,1210.6922 Q1291.575,1210.6284 1291.328,1210.6284 Q1290.7303,1210.6284 1290.3717,1210.9073 Q1290.0131,1211.1783 1289.8617,1211.6803 Q1289.7103,1212.1823 1289.7103,1212.8517 Q1289.7103,1213.9116 1290.0769,1214.4216 Q1290.4434,1214.9236 1291.2563,1214.9236 Q1291.5591,1214.9236 1291.8778,1214.8439 Q1292.1966,1214.7642 1292.6189,1214.565 L1292.6189,1215.7523 Q1292.2444,1215.9277 1291.838,1216.0153 Q1291.4395,1216.095 1291.0491,1216.095 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" lengthAdjust="spacing" textLength="64.26" x="1298.46" y="1215.1546">PositiveItemBehaviour</text><line style="stroke:#A80036;stroke-width:0.765;" x1="1284.18" x2="1363.74" y1="1220.94" y2="1220.94"/><ellipse cx="1289.28" cy="1226.55" fill="none" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="28.56" x="1293.87" y="1228.977">health : int</text><line style="stroke:#A80036;stroke-width:0.765;" x1="1284.18" x2="1363.74" y1="1232.6608" y2="1232.6608"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="61.2" x="1293.87" y="1240.6978">__init__(self, health: int)</text><ellipse cx="1289.28" cy="1245.9115" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="43.86" x="1293.87" y="1248.3386">action(self) -&gt; int</text><!--MD5=[5e305716458bbdabbd2d7f572ed2bae2]
+class Card--><rect codeLine="244" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="47.4023" id="Card" style="stroke:#A80036;stroke-width:0.765;" width="130.05" x="1550.145" y="396.78"/><ellipse cx="1606.1175" cy="404.94" fill="#ADD1B2" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M1605.8466,408.255 Q1604.9541,408.255 1604.3723,407.8645 Q1603.7986,407.4661 1603.5117,406.7489 Q1603.2328,406.0238 1603.2328,405.0675 Q1603.2328,403.9917 1603.5675,403.2267 Q1603.9022,402.4538 1604.5556,402.0394 Q1605.2091,401.625 1606.1653,401.625 Q1606.6195,401.625 1606.9622,401.7206 Q1607.3048,401.8163 1607.6555,401.9995 L1607.2411,403.0833 Q1606.9223,402.9159 1606.6434,402.8522 Q1606.3725,402.7884 1606.1255,402.7884 Q1605.5278,402.7884 1605.1692,403.0673 Q1604.8106,403.3383 1604.6592,403.8403 Q1604.5078,404.3423 1604.5078,405.0117 Q1604.5078,406.0716 1604.8744,406.5816 Q1605.2409,407.0836 1606.0538,407.0836 Q1606.3566,407.0836 1606.6753,407.0039 Q1606.9941,406.9242 1607.4164,406.725 L1607.4164,407.9123 Q1607.0419,408.0877 1606.6355,408.1753 Q1606.237,408.255 1605.8466,408.255 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" lengthAdjust="spacing" textLength="13.77" x="1616.5725" y="407.3146">Card</text><line style="stroke:#A80036;stroke-width:0.765;" x1="1550.655" x2="1679.685" y1="413.1" y2="413.1"/><ellipse cx="1555.755" cy="418.71" fill="none" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="79.05" x="1560.345" y="421.137">time_actions : list[TimeAction]</text><line style="stroke:#A80036;stroke-width:0.765;" x1="1550.655" x2="1679.685" y1="424.8208" y2="424.8208"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="111.69" x="1560.345" y="432.8578">__init__(self, time_actions: list[TimeAction])</text><ellipse cx="1555.755" cy="438.0715" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="116.79" x="1560.345" y="440.4986">get_time_action(self, time: int) -&gt; TimeAction</text><!--MD5=[cd8f0d7fe9e7311e05df2db76a1ab3f4]
+class CardManager--><rect codeLine="250" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="62.6838" id="CardManager" style="stroke:#A80036;stroke-width:0.765;" width="115.26" x="1416.78" y="389.13"/><ellipse cx="1452.3525" cy="397.29" fill="#ADD1B2" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M1452.0816,400.605 Q1451.1891,400.605 1450.6073,400.2145 Q1450.0336,399.8161 1449.7467,399.0989 Q1449.4678,398.3738 1449.4678,397.4175 Q1449.4678,396.3417 1449.8025,395.5767 Q1450.1372,394.8038 1450.7906,394.3894 Q1451.4441,393.975 1452.4003,393.975 Q1452.8545,393.975 1453.1972,394.0706 Q1453.5398,394.1663 1453.8905,394.3495 L1453.4761,395.4333 Q1453.1573,395.2659 1452.8784,395.2022 Q1452.6075,395.1384 1452.3605,395.1384 Q1451.7628,395.1384 1451.4042,395.4173 Q1451.0456,395.6883 1450.8942,396.1903 Q1450.7428,396.6923 1450.7428,397.3617 Q1450.7428,398.4216 1451.1094,398.9316 Q1451.4759,399.4336 1452.2888,399.4336 Q1452.5916,399.4336 1452.9103,399.3539 Q1453.2291,399.2742 1453.6514,399.075 L1453.6514,400.2623 Q1453.2769,400.4377 1452.8705,400.5253 Q1452.472,400.605 1452.0816,400.605 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" lengthAdjust="spacing" textLength="39.78" x="1462.8075" y="399.6646">CardManager</text><line style="stroke:#A80036;stroke-width:0.765;" x1="1417.29" x2="1531.53" y1="405.45" y2="405.45"/><polygon fill="none" points="1422.39,408.51,1424.43,410.55,1422.39,412.59,1420.35,410.55" style="stroke:#B38D22;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="58.14" x="1426.98" y="413.487">_card_deck : list[Card]</text><line style="stroke:#A80036;stroke-width:0.765;" x1="1417.29" x2="1531.53" y1="417.1708" y2="417.1708"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="31.11" x="1426.98" y="425.2078">__init__(self)</text><ellipse cx="1422.39" cy="430.4215" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="102" x="1426.98" y="432.8486">add_card(self, item: ItemType) -&gt; None</text><ellipse cx="1422.39" cy="438.0623" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="70.38" x="1426.98" y="440.4893">add_all_cards(self) -&gt; None</text><ellipse cx="1422.39" cy="445.7031" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="68.34" x="1426.98" y="448.1301">get_deck(self) -&gt; list[Card]</text><!--MD5=[2ed5cd3381cfcd0e7887405b55529573]
+class TimeAction--><rect codeLine="258" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="55.0431" id="TimeAction" style="stroke:#A80036;stroke-width:0.765;" width="172.38" x="1525.92" y="560.49"/><ellipse cx="1593.8775" cy="568.65" fill="#ADD1B2" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M1593.6066,571.965 Q1592.7141,571.965 1592.1323,571.5745 Q1591.5586,571.1761 1591.2717,570.4589 Q1590.9928,569.7338 1590.9928,568.7775 Q1590.9928,567.7017 1591.3275,566.9367 Q1591.6622,566.1638 1592.3156,565.7494 Q1592.9691,565.335 1593.9253,565.335 Q1594.3795,565.335 1594.7222,565.4306 Q1595.0648,565.5263 1595.4155,565.7095 L1595.0011,566.7933 Q1594.6823,566.6259 1594.4034,566.5622 Q1594.1325,566.4984 1593.8855,566.4984 Q1593.2878,566.4984 1592.9292,566.7773 Q1592.5706,567.0483 1592.4192,567.5503 Q1592.2678,568.0523 1592.2678,568.7217 Q1592.2678,569.7816 1592.6344,570.2916 Q1593.0009,570.7936 1593.8138,570.7936 Q1594.1166,570.7936 1594.4353,570.7139 Q1594.7541,570.6342 1595.1764,570.435 L1595.1764,571.6223 Q1594.8019,571.7977 1594.3955,571.8853 Q1593.997,571.965 1593.6066,571.965 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" lengthAdjust="spacing" textLength="32.13" x="1604.3325" y="571.0246">TimeAction</text><line style="stroke:#A80036;stroke-width:0.765;" x1="1526.43" x2="1697.79" y1="576.81" y2="576.81"/><ellipse cx="1531.53" cy="582.42" fill="none" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="23.46" x="1536.12" y="584.847">time : int</text><ellipse cx="1531.53" cy="590.0608" fill="none" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="108.63" x="1536.12" y="592.4878">time_behaviour : AbstractTimeBehaviour</text><line style="stroke:#A80036;stroke-width:0.765;" x1="1526.43" x2="1697.79" y1="596.1715" y2="596.1715"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="166.26" x="1528.98" y="604.2086">__init__(self, time: int, time_behaviour: AbstractTimeBehaviour)</text><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="67.32" x="1528.98" y="611.8493">__eq__(self, other) -&gt; bool</text><!--MD5=[a3816093cbd1cdc24f5b29d00ffa33be]
+class AbstractTimeBehaviour--><rect codeLine="265" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="47.4023" id="AbstractTimeBehaviour" style="stroke:#A80036;stroke-width:0.765;" width="80.58" x="1566.21" y="737.97"/><ellipse cx="1574.0895" cy="746.13" fill="#A9DCDF" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M1571.6272,749.0625 L1573.3325,742.4325 L1574.9342,742.4325 L1576.6554,749.0625 L1575.3964,749.0625 L1575.0218,747.5325 L1573.2289,747.5325 L1572.8464,749.0625 L1571.6272,749.0625 Z M1573.8743,744.7594 L1573.4918,746.4328 L1574.7748,746.4328 L1574.4083,744.7594 Q1574.3365,744.4327 1574.2728,744.1219 Q1574.209,743.8111 1574.1373,743.4764 Q1574.0815,743.8111 1574.0098,744.1219 Q1573.9381,744.4327 1573.8743,744.7594 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" font-style="italic" lengthAdjust="spacing" textLength="63.75" x="1581.2805" y="748.5046">AbstractTimeBehaviour</text><line style="stroke:#A80036;stroke-width:0.765;" x1="1566.72" x2="1646.28" y1="754.29" y2="754.29"/><ellipse cx="1571.82" cy="759.9" fill="none" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="34.68" x="1576.41" y="762.327">message : str</text><line style="stroke:#A80036;stroke-width:0.765;" x1="1566.72" x2="1646.28" y1="766.0108" y2="766.0108"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="67.32" x="1576.41" y="774.0478">__init__(self, message: str)</text><ellipse cx="1571.82" cy="779.2615" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" font-style="italic" lengthAdjust="spacing" textLength="27.03" x="1576.41" y="781.6886">action(self)</text><polygon fill="none" points="1605.8032,785.3723,1609.0719,795.6728,1601.935,795.463" style="stroke:#A80036;stroke-width:0.51;"/><line style="stroke:#A80036;stroke-width:0.51;" x1="1605.5034" x2="1605.48" y1="795.5679" y2="796.365"/><line style="stroke:#A80036;stroke-width:0.51;" x1="1607.2605" x2="1607.5914" y1="737.97" y2="727.6578"/><!--MD5=[a3e5adc409a05e59d004dc62e6dc5205]
+class GoodTimeBehaviour--><rect codeLine="271" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="47.4023" id="GoodTimeBehaviour" style="stroke:#A80036;stroke-width:0.765;" width="110.67" x="1417.035" y="865.725"/><ellipse cx="1440.8775" cy="873.885" fill="#ADD1B2" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M1440.6066,877.2 Q1439.7141,877.2 1439.1323,876.8095 Q1438.5586,876.4111 1438.2717,875.6939 Q1437.9928,874.9688 1437.9928,874.0125 Q1437.9928,872.9367 1438.3275,872.1717 Q1438.6622,871.3988 1439.3156,870.9844 Q1439.9691,870.57 1440.9253,870.57 Q1441.3795,870.57 1441.7222,870.6656 Q1442.0648,870.7613 1442.4155,870.9445 L1442.0011,872.0283 Q1441.6823,871.8609 1441.4034,871.7972 Q1441.1325,871.7334 1440.8855,871.7334 Q1440.2878,871.7334 1439.9292,872.0123 Q1439.5706,872.2833 1439.4192,872.7853 Q1439.2678,873.2873 1439.2678,873.9567 Q1439.2678,875.0166 1439.6344,875.5266 Q1440.0009,876.0286 1440.8138,876.0286 Q1441.1166,876.0286 1441.4353,875.9489 Q1441.7541,875.8692 1442.1764,875.67 L1442.1764,876.8573 Q1441.8019,877.0327 1441.3955,877.1203 Q1440.997,877.2 1440.6066,877.2 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" lengthAdjust="spacing" textLength="58.65" x="1451.3325" y="876.2596">GoodTimeBehaviour</text><line style="stroke:#A80036;stroke-width:0.765;" x1="1417.545" x2="1527.195" y1="882.045" y2="882.045"/><ellipse cx="1422.645" cy="887.655" fill="none" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="28.56" x="1427.235" y="890.082">health : int</text><line style="stroke:#A80036;stroke-width:0.765;" x1="1417.545" x2="1527.195" y1="893.7658" y2="893.7658"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="97.41" x="1427.235" y="901.8028">__init__(self, message: str, health: int)</text><ellipse cx="1422.645" cy="907.0165" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="43.86" x="1427.235" y="909.4436">action(self) -&gt; int</text><!--MD5=[41508bb22aef1249c9f67113ca8d50bc]
+class BadTimeBehaviour--><rect codeLine="277" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="47.4023" id="BadTimeBehaviour" style="stroke:#A80036;stroke-width:0.765;" width="115.26" x="1545.81" y="865.725"/><ellipse cx="1573.9875" cy="873.885" fill="#ADD1B2" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M1573.7166,877.2 Q1572.8241,877.2 1572.2423,876.8095 Q1571.6686,876.4111 1571.3817,875.6939 Q1571.1028,874.9688 1571.1028,874.0125 Q1571.1028,872.9367 1571.4375,872.1717 Q1571.7722,871.3988 1572.4256,870.9844 Q1573.0791,870.57 1574.0353,870.57 Q1574.4895,870.57 1574.8322,870.6656 Q1575.1748,870.7613 1575.5255,870.9445 L1575.1111,872.0283 Q1574.7923,871.8609 1574.5134,871.7972 Q1574.2425,871.7334 1573.9955,871.7334 Q1573.3978,871.7334 1573.0392,872.0123 Q1572.6806,872.2833 1572.5292,872.7853 Q1572.3778,873.2873 1572.3778,873.9567 Q1572.3778,875.0166 1572.7444,875.5266 Q1573.1109,876.0286 1573.9238,876.0286 Q1574.2266,876.0286 1574.5453,875.9489 Q1574.8641,875.8692 1575.2864,875.67 L1575.2864,876.8573 Q1574.9119,877.0327 1574.5055,877.1203 Q1574.107,877.2 1573.7166,877.2 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" lengthAdjust="spacing" textLength="54.57" x="1584.4425" y="876.2596">BadTimeBehaviour</text><line style="stroke:#A80036;stroke-width:0.765;" x1="1546.32" x2="1660.56" y1="882.045" y2="882.045"/><ellipse cx="1551.42" cy="887.655" fill="none" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="33.15" x="1556.01" y="890.082">damage : int</text><line style="stroke:#A80036;stroke-width:0.765;" x1="1546.32" x2="1660.56" y1="893.7658" y2="893.7658"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="102" x="1556.01" y="901.8028">__init__(self, message: str, damage: int)</text><ellipse cx="1551.42" cy="907.0165" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="43.86" x="1556.01" y="909.4436">action(self) -&gt; int</text><!--MD5=[bbb20d4a668a6fea21e2c5db620f8792]
+class NeutralTimeBehaviour--><rect codeLine="283" fill="#FEFECE" filter="url(#f1t65urt5i07yp)" height="39.7615" id="NeutralTimeBehaviour" style="stroke:#A80036;stroke-width:0.765;" width="81.09" x="1679.175" y="869.55"/><ellipse cx="1686.825" cy="877.71" fill="#ADD1B2" rx="5.61" ry="5.61" style="stroke:#A80036;stroke-width:0.51;"/><path d="M1686.5541,881.025 Q1685.6616,881.025 1685.0798,880.6345 Q1684.5061,880.2361 1684.2192,879.5189 Q1683.9403,878.7938 1683.9403,877.8375 Q1683.9403,876.7617 1684.275,875.9967 Q1684.6097,875.2238 1685.2631,874.8094 Q1685.9166,874.395 1686.8728,874.395 Q1687.327,874.395 1687.6697,874.4906 Q1688.0123,874.5863 1688.363,874.7695 L1687.9486,875.8533 Q1687.6298,875.6859 1687.3509,875.6222 Q1687.08,875.5584 1686.833,875.5584 Q1686.2353,875.5584 1685.8767,875.8373 Q1685.5181,876.1083 1685.3667,876.6103 Q1685.2153,877.1123 1685.2153,877.7817 Q1685.2153,878.8416 1685.5819,879.3516 Q1685.9484,879.8536 1686.7613,879.8536 Q1687.0641,879.8536 1687.3828,879.7739 Q1687.7016,879.6942 1688.1239,879.495 L1688.1239,880.6823 Q1687.7494,880.8577 1687.343,880.9453 Q1686.9445,881.025 1686.5541,881.025 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="6.12" lengthAdjust="spacing" textLength="64.77" x="1693.965" y="880.0846">NeutralTimeBehaviour</text><line style="stroke:#A80036;stroke-width:0.765;" x1="1679.685" x2="1759.755" y1="885.87" y2="885.87"/><line style="stroke:#A80036;stroke-width:0.765;" x1="1679.685" x2="1759.755" y1="889.95" y2="889.95"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="67.32" x="1689.375" y="897.987">__init__(self, message: str)</text><ellipse cx="1684.785" cy="903.2008" fill="#84BE84" rx="1.53" ry="1.53" style="stroke:#038048;stroke-width:0.51;"/><text fill="#000000" font-family="sans-serif" font-size="5.61" lengthAdjust="spacing" textLength="43.86" x="1689.375" y="905.6278">action(self) -&gt; str</text><!--MD5=[6adefd95966ca55cfc1d6dc788635554]
+reverse link AbstractTileSide to Door--><path d="M235.62,799.935 C235.62,799.935 220.0038,820.5747 202.98,831.3 C170.2074,851.9448 157.0494,846.804 121.38,861.9 C113.0466,865.4292 104.1522,869.4888 95.9208,873.375 " fill="none" id="AbstractTileSide-backto-Door" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[9cd29033e70f459efeeb7011885d7601]
+reverse link AbstractTileSide to Wall--><path d="M235.62,799.935 C235.62,799.935 204.7038,847.6761 188.1594,873.222 " fill="none" id="AbstractTileSide-backto-Wall" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[cbaf041491e4407ec8dd8982baa8fe47]
+reverse link AbstractTileBehaviour to EvilTempleBehaviour--><path d="M584.97,788.715 C584.97,788.715 593.0025,845.0853 597.0162,873.273 " fill="none" id="AbstractTileBehaviour-backto-EvilTempleBehaviour" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[58cd99f4344acd0ee878d8b4d42c2a2e]
+reverse link AbstractTileBehaviour to GraveyardBehaviour--><path d="M584.97,788.715 C584.97,788.715 645.7875,845.0853 676.1988,873.273 " fill="none" id="AbstractTileBehaviour-backto-GraveyardBehaviour" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[33ab975d31a6503fad2ea4b81090d219]
+reverse link AbstractTileBehaviour to GardenBehaviour--><path d="M584.97,788.715 C584.97,788.715 673.3122,825.0576 740.01,861.9 C746.2677,865.3578 752.862,869.3715 758.931,873.2322 " fill="none" id="AbstractTileBehaviour-backto-GardenBehaviour" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[40fbc56ab1a0af3fb9586855159e77e0]
+reverse link AbstractTileBehaviour to KitchenBehaviour--><path d="M584.97,788.715 C584.97,788.715 556.0377,818.1471 526.83,831.3 C468.4554,857.5854 445.2555,837.4914 386.07,861.9 C378.8178,864.8937 371.4279,869.1216 364.8999,873.3495 " fill="none" id="AbstractTileBehaviour-backto-KitchenBehaviour" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[49acfd0905274765e7c65c26c7e68723]
+reverse link AbstractTileBehaviour to StorageBehavior--><path d="M584.97,788.715 C584.97,788.715 554.0283,814.3782 526.83,831.3 C501.8655,846.8295 493.5474,847.0335 468.18,861.9 C462.1161,865.4547 455.7003,869.5041 449.7792,873.3699 " fill="none" id="AbstractTileBehaviour-backto-StorageBehavior" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[9ee13eca796e275a542de93f394db5bb]
+reverse link AbstractTileBehaviour to DefaultBehaviour--><path d="M584.97,788.715 C584.97,788.715 542.7981,845.0853 521.7147,873.273 " fill="none" id="AbstractTileBehaviour-backto-DefaultBehaviour" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[67fa4c9bcac9d012fbe56770dc6185e8]
+reverse link AbstractItemBehaviour to NegativeItemBehaviour--><path d="M1225.53,1154.385 C1225.53,1154.385 1186.4844,1183.0725 1157.2002,1204.5894 " fill="none" id="AbstractItemBehaviour-backto-NegativeItemBehaviour" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[c136f3647111bf1d2179ee5c66cfd62e]
+reverse link AbstractItemBehaviour to PassiveItemBehaviour--><path d="M1225.53,1154.385 C1225.53,1154.385 1225.53,1190.6919 1225.53,1212.2496 " fill="none" id="AbstractItemBehaviour-backto-PassiveItemBehaviour" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[7413707770ab983460cb1dfaca3c2a05]
+reverse link AbstractItemBehaviour to PositiveItemBehaviour--><path d="M1225.53,1154.385 C1225.53,1154.385 1263.9789,1183.0725 1292.8143,1204.5894 " fill="none" id="AbstractItemBehaviour-backto-PositiveItemBehaviour" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[7d53930faa8607d2993a6bd6864eb8d5]
+reverse link AbstractTimeBehaviour to GoodTimeBehaviour--><path d="M1605.48,796.365 C1605.48,796.365 1545.2184,838.2717 1505.7852,865.6893 " fill="none" id="AbstractTimeBehaviour-backto-GoodTimeBehaviour" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[a918497f31aed4b20057b4dd3877f291]
+reverse link AbstractTimeBehaviour to BadTimeBehaviour--><path d="M1605.48,796.365 C1605.48,796.365 1604.5569,838.1493 1603.9551,865.572 " fill="none" id="AbstractTimeBehaviour-backto-BadTimeBehaviour" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[cb5a808b143fb61ccf4b4419aa39576b]
+reverse link AbstractTimeBehaviour to NeutralTimeBehaviour--><path d="M1605.48,796.365 C1605.48,796.365 1662.2736,842.3823 1695.7704,869.5245 " fill="none" id="AbstractTimeBehaviour-backto-NeutralTimeBehaviour" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[0c1d7a09efc1eac5452eb722386d601e]
+reverse link Main to Game--><path codeLine="291" d="M1225.53,141.984 C1225.53,149.7513 1225.53,157.7073 1225.53,165.6021 " fill="none" id="Main-backto-Game" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="1225.53,135.2112,1223.49,138.2712,1225.53,141.3312,1227.57,138.2712,1225.53,135.2112" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[4c9600440e534345107d303c1b3a991c]
+reverse link Main to CardManager--><path codeLine="292" d="M1282.9101,93.8298 C1315.4379,109.9662 1354.6926,134.0892 1380.57,165.75 C1436.1039,233.6871 1460.5278,337.569 1469.6976,388.9668 " fill="none" id="Main-backto-CardManager" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="1276.9176,90.9126,1278.7751,94.0867,1282.4194,93.593,1280.562,90.4188,1276.9176,90.9126" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[f7fc808600e26316b3e738ad1fdaa864]
+reverse link Main to PickleManager--><path codeLine="293" d="M1168.5273,106.4727 C1142.4816,123.7566 1111.5399,145.0899 1084.77,165.75 C1064.6352,181.2897 1043.2152,199.7262 1025.6508,215.3985 " fill="none" id="Main-backto-PickleManager" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="1174.1781,102.7344,1170.5005,102.7209,1169.0736,106.1105,1172.7512,106.124,1174.1781,102.7344" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[a3e03cf308d5378e8e7cd28dd1c5ab1a]
+reverse link Main to Parser--><path codeLine="294" d="M1167.4563,70.6401 C1093.5726,74.766 966.5163,92.8965 890.97,165.75 C873.2169,182.8707 866.898,211.5582 864.654,230.673 " fill="none" id="Main-backto-Parser" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="1174.2189,70.2933,1171.0576,68.414,1168.1071,70.6093,1171.2683,72.4886,1174.2189,70.2933" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[5da89b2e46052f82756cb69445b59e54]
+reverse link Main to Player--><path codeLine="295" d="M1283.0019,92.9016 C1313.6835,108.5076 1348.6695,132.4215 1366.29,165.75 C1383.9309,199.1142 1375.8015,299.0589 1366.29,335.58 C1348.4706,404.0067 1307.5227,473.5554 1274.3574,522.1941 " fill="none" id="Main-backto-Player" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="1276.9278,89.8875,1278.7634,93.0743,1282.4111,92.6056,1280.5755,89.4188,1276.9278,89.8875" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[bbc6ee62d3d47812e486fb9dc1de45ab]
+reverse link Game to Player--><path codeLine="296" d="M1225.53,342.2916 C1225.53,399.126 1225.53,470.9442 1225.53,522.138 " fill="none" id="Game-backto-Player" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="1225.53,335.6157,1223.49,338.6757,1225.53,341.7357,1227.57,338.6757,1225.53,335.6157" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[368947c31b7b4dc2e842ea2719b68d9b]
+reverse link Game to Card--><path codeLine="297" d="M1363.8777,274.7523 C1421.5536,288.6651 1487.4762,310.1514 1541.22,342.72 C1564.1649,356.6226 1584.7689,379.4502 1598.3655,396.6933 " fill="none" id="Game-backto-Card" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="1357.4262,273.2172,1359.9297,275.9112,1363.3793,274.6365,1360.8759,271.9425,1357.4262,273.2172" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[5dea929a4dd42978ea0a0f2ebaa6424a]
+reverse link Game to Tile--><path codeLine="298" d="M1087.2435,334.8099 C1086.4173,335.0751 1085.5962,335.3301 1084.77,335.58 C1022.6622,354.4194 1001.1045,324.156 938.91,342.72 C816.2091,379.3431 691.7079,459.3111 611.1738,517.9203 " fill="none" id="Game-backto-Tile" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="1093.5624,332.6985,1090.013,331.7358,1087.7592,334.6419,1091.3086,335.6046,1093.5624,332.6985" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[7e2e2474e0541dcfcf0fe13bb15c55d7]
+reverse link Game to Level--><path codeLine="299" d="M1122.4539,340.0935 C1121.4492,340.9758 1120.4445,341.8479 1119.45,342.72 C1110.8463,350.2425 1101.7938,358.2087 1092.9045,366.0576 " fill="none" id="Game-backto-Level" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="1127.5233,335.6718,1123.8762,336.1448,1122.91,339.6933,1126.5572,339.2203,1127.5233,335.6718" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[36a0576090da6682a3b7c1459c3e5f2f]
+reverse link Game to TilePosition--><path codeLine="300" d="M1087.2588,334.8609 C1086.4275,335.1057 1085.6013,335.3454 1084.77,335.58 C1072.6269,338.9919 185.3442,333.7644 176.46,342.72 C121.5024,398.1111 124.4706,657.9153 208.08,831.3 C212.3385,840.1281 228.9492,855.7545 243.6423,868.5147 " fill="none" id="Game-backto-TilePosition" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="1093.6134,332.8617,1090.0823,331.8338,1087.7753,334.6979,1091.3064,335.7258,1093.6134,332.8617" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[7470942fe5e67f25bcfcd9fa1348daf3]
+reverse link Game to Door--><path codeLine="301" d="M1087.2537,334.8507 C1086.4275,335.1006 1085.5962,335.3454 1084.77,335.58 C1039.2168,348.6054 703.7949,329.1081 658.41,342.72 C353.4198,434.1936 121.7115,793.6824 73.5165,873.273 " fill="none" id="Game-backto-Door" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="1093.6032,332.826,1090.0675,331.814,1087.7735,334.6885,1091.3092,335.7005,1093.6032,332.826" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[6f515c13ddce17eba158212721e0779d]
+reverse link Player to Item--><path codeLine="302" d="M1225.53,660.6387 C1225.53,745.7934 1225.53,884.9163 1225.53,956.7549 " fill="none" id="Player-backto-Item" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="1225.53,653.9679,1223.49,657.0279,1225.53,660.0879,1227.57,657.0279,1225.53,653.9679" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[a3bb76009305c3188ffdb1d6e997cd28]
+reverse link Level to Tile--><path codeLine="303" d="M940.9551,450.8094 C847.5894,481.2921 703.4889,528.3396 611.0361,558.5265 " fill="none" id="Level-backto-Tile" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="947.3097,448.7337,943.7681,447.7426,941.4911,450.6306,945.0327,451.6217,947.3097,448.7337" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[5488d7791ef64692a33460bbddf6aa95]
+reverse link Level to TilePosition--><path codeLine="304" d="M940.9449,447.6168 C914.3943,458.2758 886.6095,472.5405 864.45,491.13 C726.8367,606.5889 799.8279,738.2556 646.17,831.3 C580.4718,871.08 373.167,833.2278 301.92,861.9 C298.7937,863.1597 295.7235,864.8121 292.791,866.6787 " fill="none" id="Level-backto-TilePosition" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="947.1261,445.1943,943.5319,444.4154,941.4305,447.4335,945.0247,448.2125,947.1261,445.1943" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[0e9755ea08e16e426bc425f971eef2e5]
+reverse link Level to Player--><path codeLine="305" d="M1099.9119,479.3031 C1116.0177,493.1802 1133.3067,508.0722 1149.744,522.2349 " fill="none" id="Level-backto-Player" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="1094.7303,474.8355,1095.7184,478.3779,1099.3684,478.8283,1098.3803,475.2859,1094.7303,474.8355" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[a04f2cc6b0f0a1fd583d9e0a3f447eab]
+reverse link Tile to AbstractTileBehaviour--><path codeLine="306" d="M552.9267,667.8297 C562.3362,692.1465 572.0364,717.213 579.0132,735.2364 " fill="none" id="Tile-backto-AbstractTileBehaviour" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="550.4787,661.5006,549.6785,665.0902,552.6842,667.2094,553.4844,663.6198,550.4787,661.5006" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[c15a3998cd9c760b9447bc102058d093]
+reverse link Tile to TileType--><path codeLine="307" d="M504.1248,668.1765 C502.3092,676.1478 500.4783,684.1956 498.6933,692.0496 " fill="none" id="Tile-backto-TileType" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="505.6446,661.5006,502.9761,664.0312,504.2857,667.4678,506.9542,664.9372,505.6446,661.5006" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[56fcf560feadce4f5ff82cc6b0a30872]
+reverse link Tile to AbstractTileSide--><path codeLine="308" d="M427.7166,651.6015 C408.4131,664.7952 388.3293,678.7437 369.75,692.07 C355.6995,702.1476 340.6545,713.3574 326.9151,723.7665 " fill="none" id="Tile-backto-AbstractTileSide" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="433.4082,647.7204,429.7307,647.7596,428.3525,651.1693,432.03,651.1301,433.4082,647.7204" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[4ab36db73d23d6b0af5b987baf757dfc]
+reverse link Tile to RotationDirection--><path codeLine="309" d="M469.3683,667.2891 C463.9215,675.6225 458.5104,684.0018 453.39,692.07 C442.8687,708.645 431.3478,727.7598 423.0654,741.6777 " fill="none" id="Tile-backto-RotationDirection" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="473.1372,661.5312,469.7533,662.9715,469.7813,666.6491,473.1652,665.2088,473.1372,661.5312" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[70320c119c2f7b51c79221f68fa1244f]
+reverse link Tile to TilePosition--><path codeLine="310" d="M529.6044,668.1459 C533.4141,729.6009 533.5722,807.9573 512.55,831.3 C480.8943,866.4441 345.2904,843.03 301.92,861.9 C298.8294,863.2464 295.7796,864.9549 292.8624,866.8521 " fill="none" id="Tile-backto-TilePosition" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="529.1709,661.4955,527.3336,664.6813,529.5677,667.6026,531.405,664.4168,529.1709,661.4955" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[66a872807c381b87a171e77cb3c4ddc1]
+reverse link AbstractTileSide to TilePosition--><path codeLine="311" d="M274.9155,806.2131 C273.4314,824.6649 271.7535,845.5443 270.453,861.7062 " fill="none" id="AbstractTileSide-backto-TilePosition" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="275.4561,799.5321,273.1772,802.4186,274.9651,805.6324,277.244,802.7459,275.4561,799.5321" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[cf2766beed33a80ed12efe18d08d456e]
+reverse link Door to TilePosition--><path codeLine="312" d="M88.1076,869.1777 C99.9753,860.4006 115.0305,851.1186 130.305,846.6 C171.1662,834.5079 186.8895,830.1168 226.185,846.6 C234.1614,849.9456 241.3932,855.627 247.5183,861.7776 " fill="none" id="Door-backto-TilePosition" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="82.7169,873.2832,86.3872,873.0502,87.5837,869.5726,83.9134,869.8056,82.7169,873.2832" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[dfb00c5b6065fc3f50e6c7b400d64d2e]
+reverse link Wall to TilePosition--><path codeLine="313" d="M232.5804,889.44 C236.2626,889.44 239.9448,889.44 243.6321,889.44 " fill="none" id="Wall-backto-TilePosition" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="225.9453,889.44,229.0053,891.48,232.0653,889.44,229.0053,887.4,225.9453,889.44" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[0bf9d58ce039cdee12fe7602b650cb1b]
+reverse link EvilTempleBehaviour to Item--><path codeLine="314" d="M618.7269,910.3296 C626.7033,917.4594 636.4596,924.7881 646.68,929.22 C736.0269,967.9545 1017.6285,990.0732 1152.3399,998.6871 " fill="none" id="EvilTempleBehaviour-backto-Item" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="613.7544,905.6988,614.6041,909.277,618.2338,909.8688,617.3841,906.2907,613.7544,905.6988" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[68cbe33ce471c560669d9cfb95c851a6]
+reverse link CardManager to Card--><path codeLine="315" d="M1538.8944,420.495 C1542.6429,420.495 1546.3914,420.495 1550.145,420.495 " fill="none" id="CardManager-backto-Card" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="1532.142,420.495,1535.202,422.535,1538.262,420.495,1535.202,418.455,1532.142,420.495" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[888d754775b8df30de51c4e6b6e305dc]
+reverse link CardManager to ItemType--><path codeLine="316" d="M1466.658,458.5206 C1441.9587,578.034 1365.1629,949.6659 1338.1023,1080.6084 " fill="none" id="CardManager-backto-ItemType" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="1467.9993,452.0181,1465.3826,454.6023,1466.7616,458.0116,1469.3783,455.4274,1467.9993,452.0181" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[86ced3430df59e96a79a75aa2e9cfcda]
+reverse link Card to TimeAction--><path codeLine="317" d="M1614.6192,451.095 C1614.0429,482.256 1613.1555,530.502 1612.6047,560.4849 " fill="none" id="Card-backto-TimeAction" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="1614.7416,444.3324,1612.6481,447.3561,1614.634,450.4515,1616.7275,447.4278,1614.7416,444.3324" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[f885e511a7529b4c6c2946e8ed2edefb]
+reverse link TimeAction to AbstractTimeBehaviour--><path codeLine="318" d="M1611.0135,622.3581 C1610.0241,652.8051 1608.5757,697.3077 1607.5914,727.6578 " fill="none" id="TimeAction-backto-AbstractTimeBehaviour" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="1611.2277,615.7026,1609.0912,618.696,1611.0326,621.8195,1613.1691,618.8261,1611.2277,615.7026" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[c2fb6c414d4575d50383d5de15d1dfc2]
+reverse link Item to AbstractItemBehaviour--><path codeLine="319" d="M1225.53,1056.9546 C1225.53,1072.2495 1225.53,1088.2533 1225.53,1101.0798 " fill="none" id="Item-backto-AbstractItemBehaviour" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="1225.53,1050.2277,1223.49,1053.2877,1225.53,1056.3477,1227.57,1053.2877,1225.53,1050.2277" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[464cd10559faf40f434c09e7fddb3b32]
+reverse link Item to ItemType--><path codeLine="320" d="M1268.7474,1055.496 C1281.8748,1071.1581 1295.7366,1087.6974 1306.8087,1100.9064 " fill="none" id="Item-backto-ItemType" style="stroke:#A80036;stroke-width:0.51;"/><polygon fill="#A80036" points="1264.3308,1050.2277,1264.7298,1053.8837,1268.258,1054.9215,1267.859,1051.2655,1264.3308,1050.2277" style="stroke:#A80036;stroke-width:0.51;"/><!--MD5=[3d689e7d900b6cb483dd1dfd407a3659]
+@startuml
+skinparam groupInheritance 2
+' Split into 4 pages
+page 2x2
+skinparam pageMargin 10
+skinparam pageExternalColor gray
+skinparam pageBorderColor black
+
+together {
+  class Main {
+        #_game : Game
+        #_player : Player
+        #_card_manager : CardManager
+        #_pickle_manager: PickleManager
+        __init__(self)
+        +do_help(self, args) -> bool | None
+        +quit(self, args) -> bool
+        +player_health(self, args) -> None
+        +player_attack(self, args) -> None
+        +stats(self, args) -> None
+        +rename(self, args) -> Any
+        +save_game(self, args) -> None
+        +load_game(self, args) -> None
+        +default(self, args) -> bool
+    }
+
+
+    class Parser {
+        args = str
+        __init__(self)
+    }
+
+    class PickleManager {
+        #_current_dir
+        __init__(self)
+        +serialize_object_to_file(self, file_name: str, obj: Game) -> None
+        +deserialize_file_to_object(self, file_name: str) -> Game
+        +remove_save(self, file_name: str) -> None
+        +get_current_dir(self) -> str
+    }
+
+    class Game {
+        #_time: int
+        #_inside_tiles: list[Tile]
+        #_outside_tiles: list[Tile]
+        #_dev_cards: list[Card]
+        #_current_dev_cards: list[Card]
+        #_current_dev_card: Card | None
+        #_level: Level
+        __init__(self, time: int, level: Level, dev_cards: list[Card])
+        +setup() -> None
+        +{static} shuffle_decks(deck: list[Card | Tile]) -> list[Card | Tile]
+        +draw_tile(self) -> Tile
+        +move(self, entry_door: Door, exit_door: Door, new_tile: Tile) -> None
+        +{static}correct_tile_rotation(correct_door_position: TilePosition, new_tile: Tile, exit_door: Door) -> Tile
+        +{static}get_tile_doors(tile: Tile) -> list[Door]
+        +tile_algorithm(self, new_tile: Tile) -> bool
+        #_get_index_of_tile(self, target_tile: Tile) -> int
+        +pickup_item()
+        +attack(self, zombie_count: int, attack_score: int) -> None
+        +cower(self) -> None
+    }
+
+    class Player {
+        #_health : int
+        #_attack : int
+        #_player_items : list[Item]
+        #_inside : bool
+        #_x : float
+        #_y : float
+        __init__(self, health: int, attack: int, player_items: list[Item], x: float, y: float)
+        +get_x(self) -> float
+        +get_y(self) -> float
+        +get_health(self) -> int
+        +get_is_inside(self) -> bool
+        +get_attack_score(self) -> int
+        +set_health(self) -> None
+        +set_player_pos(self, x: float, y: float) -> None
+    }
+
+    package level <<Folder>> #DDDDDD {
+        class Level {
+            #_tiles : list[Tile]
+            #_player : Player
+            __init__(self, tiles: list[Tile], player: Player)
+            +add_new_tile(self, tile: Tile)
+            +check_if_tile_already_exists(self, x: float, y: float) -> bool
+            +heck_if_door_exist_near_cords(self, x: float, y: float) -> bool
+            +{static}get_door_info_on_tile(tile: Tile) -> [dict[int, TilePosition]]
+            +get_tile_player_is_on(self) -> Tile
+            +get_tile_by_cords(self, x: float, y: float) -> Tile | bool
+            +get_tile_count(self) -> int
+            +get_player(self) -> Player
+        }
+    }
+}
+
+
+
+
+
+package tiles <<Folder>> #DDDDDD {
+    class Tile {
+        +tile_name : str
+        +tile_type : TileType
+        +tile_behaviour : AbstractTileBehaviour
+        #_tile_sides : list[AbstractTileSide]
+        #_x : float
+        #_y : float
+        __init__(self, tile_type: TileType, x: float, y: float)
+        #_change_tile_side(self, tile_position: TilePosition, side) -> None
+        +rotate_tile(self, rotation_direction: RotationDirection) -> None
+        +get_door_index_from_position(self, door_position: int) -> int
+        +get_side_from_index(self, index: int) -> AbstractTileSide
+        +get_x(self) -> float
+        +get_y(self) -> float
+        +set_pos(self, x: float, y: float) -> None
+        +get_tile_sides(self) -> list[AbstractTileSide]
+        __eq__(self, other) -> bool
+    }
+
+    enum RotationDirection {
+        Right,
+        Left
+    }
+
+    enum TilePosition {
+        North = 0
+        East = 1
+        South = 2
+        West = 3
+    }
+
+    enum TileType {
+        Foyer,
+        Bedroom,
+        DiningRoom,
+        Bathroom,
+        Kitchen,
+        Storage,
+        EvilTemple,
+        Patio,
+        Yard1,
+        Yard2,
+        Yard3,
+        Garage,
+        SittingArea,
+        Garden,
+        Graveyard
+    }
+
+    class Door extends AbstractTileSide {
+        __init__(self, tile_side: TilePosition)
+    }
+
+    class Wall extends AbstractTileSide {
+        __init__(self, tile_side: TilePosition)
+    }
+
+    abstract class AbstractTileSide {
+        +original_tile_side : TilePosition
+        __init__(self, tile_side: TilePosition)
+        +get_tile_side(self) -> TilePosition
+        __eq__(self, other) -> bool
+    }
+
+    abstract class AbstractTileBehaviour {
+        +{abstract} action(self)
+    }
+
+    class EvilTempleBehaviour extends AbstractTileBehaviour {
+        +action(self) -> Item
+    }
+
+    class GraveyardBehaviour extends AbstractTileBehaviour {
+        +action(self) -> str
+    }
+
+    class GardenBehaviour extends AbstractTileBehaviour {
+        +action(self) -> int
+    }
+
+    class KitchenBehaviour extends AbstractTileBehaviour {
+        +action(self) -> int
+    }
+
+    class StorageBehavior extends AbstractTileBehaviour {
+        +action(self) -> str
+    }
+
+    class DefaultBehaviour extends AbstractTileBehaviour {
+        +action(self) -> None
+    }
+
+
+}
+
+package items <<Folder>> #DDDDDD {
+    class Item {
+        +item_name : str
+        +primary_item_behaviour : AbstractItemBehaviour
+        +optional_item_behaviour : AbstractItemBehaviour
+        +combo_item : ItemType | None
+        +second_combo_item : ItemType | None
+        +uses : int | None
+        +item_type : ItemType
+        __init__(self, item_type: ItemType)
+        +action(self) -> AbstractItemBehaviour
+    }
+
+    enum ItemType {
+        Oil,
+        Gasoline,
+        BoardWNail,
+        CanOfSoda,
+        GrislyFemur,
+        GolfClub,
+        Candle,
+        Chainsaw,
+        Machete
+    }
+
+    abstract class AbstractItemBehaviour {
+        +{abstract} action(self)
+    }
+
+    class NegativeItemBehaviour extends AbstractItemBehaviour {
+        +damage : int
+        __init__(self, damage: int)
+        +action(self) -> int
+    }
+
+    class PassiveItemBehaviour extends AbstractItemBehaviour {
+        +action(self) -> None
+    }
+
+    class PositiveItemBehaviour extends AbstractItemBehaviour {
+        +health : int
+        __init__(self, health: int)
+        +action(self) -> int
+    }
+}
+
+package cards <<Folder>> #DDDDDD {
+    class Card {
+        +time_actions : list[TimeAction]
+        __init__(self, time_actions: list[TimeAction])
+        +get_time_action(self, time: int) -> TimeAction
+    }
+
+    class CardManager {
+        #_card_deck : list[Card]
+        __init__(self)
+        +add_card(self, item: ItemType) -> None
+        +add_all_cards(self) -> None
+        +get_deck(self) -> list[Card]
+    }
+
+    class TimeAction {
+        +time : int
+        +time_behaviour : AbstractTimeBehaviour
+        __init__(self, time: int, time_behaviour: AbstractTimeBehaviour)
+        __eq__(self, other) -> bool
+    }
+
+    abstract class AbstractTimeBehaviour {
+        +message : str
+        __init__(self, message: str)
+        {abstract}+action(self)
+    }
+
+    class GoodTimeBehaviour extends AbstractTimeBehaviour {
+        +health : int
+        __init__(self, message: str, health: int)
+        +action(self) -> int
+    }
+
+    class BadTimeBehaviour extends AbstractTimeBehaviour {
+        +damage : int
+        __init__(self, message: str, damage: int)
+        +action(self) -> int
+    }
+
+    class NeutralTimeBehaviour extends AbstractTimeBehaviour {
+        __init__(self, message: str)
+        +action(self) -> str
+    }
+
+
+}
+
+Main *- - Game
+Main *- - CardManager
+Main *- - PickleManager
+Main *- - Parser
+Main *- - Player
+Game *- - Player
+Game *- - Card
+Game *- - Tile
+Game *- - Level
+Game *- - TilePosition
+Game *- - Door
+Player *- - Item
+Level *- - Tile
+Level *- - TilePosition
+Level *- - Player
+Tile *- - AbstractTileBehaviour
+Tile *- - TileType
+Tile *- - AbstractTileSide
+Tile *- - RotationDirection
+Tile *- - TilePosition
+AbstractTileSide *- - TilePosition
+Door *- TilePosition
+Wall *- TilePosition
+EvilTempleBehaviour *- - Item
+CardManager *- Card
+CardManager *- - ItemType
+Card *- - TimeAction
+TimeAction *- - AbstractTimeBehaviour
+Item *- - AbstractItemBehaviour
+Item *- - ItemType
+@enduml
+
+@startuml
+skinparam groupInheritance 2
+page 2x2
+skinparam pageMargin 10
+skinparam pageExternalColor gray
+skinparam pageBorderColor black
+
+together {
+  class Main {
+        #_game : Game
+        #_player : Player
+        #_card_manager : CardManager
+        #_pickle_manager: PickleManager
+        __init__(self)
+        +do_help(self, args) -> bool | None
+        +quit(self, args) -> bool
+        +player_health(self, args) -> None
+        +player_attack(self, args) -> None
+        +stats(self, args) -> None
+        +rename(self, args) -> Any
+        +save_game(self, args) -> None
+        +load_game(self, args) -> None
+        +default(self, args) -> bool
+    }
+
+
+    class Parser {
+        args = str
+        __init__(self)
+    }
+
+    class PickleManager {
+        #_current_dir
+        __init__(self)
+        +serialize_object_to_file(self, file_name: str, obj: Game) -> None
+        +deserialize_file_to_object(self, file_name: str) -> Game
+        +remove_save(self, file_name: str) -> None
+        +get_current_dir(self) -> str
+    }
+
+    class Game {
+        #_time: int
+        #_inside_tiles: list[Tile]
+        #_outside_tiles: list[Tile]
+        #_dev_cards: list[Card]
+        #_current_dev_cards: list[Card]
+        #_current_dev_card: Card | None
+        #_level: Level
+        __init__(self, time: int, level: Level, dev_cards: list[Card])
+        +setup() -> None
+        +{static} shuffle_decks(deck: list[Card | Tile]) -> list[Card | Tile]
+        +draw_tile(self) -> Tile
+        +move(self, entry_door: Door, exit_door: Door, new_tile: Tile) -> None
+        +{static}correct_tile_rotation(correct_door_position: TilePosition, new_tile: Tile, exit_door: Door) -> Tile
+        +{static}get_tile_doors(tile: Tile) -> list[Door]
+        +tile_algorithm(self, new_tile: Tile) -> bool
+        #_get_index_of_tile(self, target_tile: Tile) -> int
+        +pickup_item()
+        +attack(self, zombie_count: int, attack_score: int) -> None
+        +cower(self) -> None
+    }
+
+    class Player {
+        #_health : int
+        #_attack : int
+        #_player_items : list[Item]
+        #_inside : bool
+        #_x : float
+        #_y : float
+        __init__(self, health: int, attack: int, player_items: list[Item], x: float, y: float)
+        +get_x(self) -> float
+        +get_y(self) -> float
+        +get_health(self) -> int
+        +get_is_inside(self) -> bool
+        +get_attack_score(self) -> int
+        +set_health(self) -> None
+        +set_player_pos(self, x: float, y: float) -> None
+    }
+
+    package level <<Folder>> #DDDDDD {
+        class Level {
+            #_tiles : list[Tile]
+            #_player : Player
+            __init__(self, tiles: list[Tile], player: Player)
+            +add_new_tile(self, tile: Tile)
+            +check_if_tile_already_exists(self, x: float, y: float) -> bool
+            +heck_if_door_exist_near_cords(self, x: float, y: float) -> bool
+            +{static}get_door_info_on_tile(tile: Tile) -> [dict[int, TilePosition]]
+            +get_tile_player_is_on(self) -> Tile
+            +get_tile_by_cords(self, x: float, y: float) -> Tile | bool
+            +get_tile_count(self) -> int
+            +get_player(self) -> Player
+        }
+    }
+}
+
+
+
+
+
+package tiles <<Folder>> #DDDDDD {
+    class Tile {
+        +tile_name : str
+        +tile_type : TileType
+        +tile_behaviour : AbstractTileBehaviour
+        #_tile_sides : list[AbstractTileSide]
+        #_x : float
+        #_y : float
+        __init__(self, tile_type: TileType, x: float, y: float)
+        #_change_tile_side(self, tile_position: TilePosition, side) -> None
+        +rotate_tile(self, rotation_direction: RotationDirection) -> None
+        +get_door_index_from_position(self, door_position: int) -> int
+        +get_side_from_index(self, index: int) -> AbstractTileSide
+        +get_x(self) -> float
+        +get_y(self) -> float
+        +set_pos(self, x: float, y: float) -> None
+        +get_tile_sides(self) -> list[AbstractTileSide]
+        __eq__(self, other) -> bool
+    }
+
+    enum RotationDirection {
+        Right,
+        Left
+    }
+
+    enum TilePosition {
+        North = 0
+        East = 1
+        South = 2
+        West = 3
+    }
+
+    enum TileType {
+        Foyer,
+        Bedroom,
+        DiningRoom,
+        Bathroom,
+        Kitchen,
+        Storage,
+        EvilTemple,
+        Patio,
+        Yard1,
+        Yard2,
+        Yard3,
+        Garage,
+        SittingArea,
+        Garden,
+        Graveyard
+    }
+
+    class Door extends AbstractTileSide {
+        __init__(self, tile_side: TilePosition)
+    }
+
+    class Wall extends AbstractTileSide {
+        __init__(self, tile_side: TilePosition)
+    }
+
+    abstract class AbstractTileSide {
+        +original_tile_side : TilePosition
+        __init__(self, tile_side: TilePosition)
+        +get_tile_side(self) -> TilePosition
+        __eq__(self, other) -> bool
+    }
+
+    abstract class AbstractTileBehaviour {
+        +{abstract} action(self)
+    }
+
+    class EvilTempleBehaviour extends AbstractTileBehaviour {
+        +action(self) -> Item
+    }
+
+    class GraveyardBehaviour extends AbstractTileBehaviour {
+        +action(self) -> str
+    }
+
+    class GardenBehaviour extends AbstractTileBehaviour {
+        +action(self) -> int
+    }
+
+    class KitchenBehaviour extends AbstractTileBehaviour {
+        +action(self) -> int
+    }
+
+    class StorageBehavior extends AbstractTileBehaviour {
+        +action(self) -> str
+    }
+
+    class DefaultBehaviour extends AbstractTileBehaviour {
+        +action(self) -> None
+    }
+
+
+}
+
+package items <<Folder>> #DDDDDD {
+    class Item {
+        +item_name : str
+        +primary_item_behaviour : AbstractItemBehaviour
+        +optional_item_behaviour : AbstractItemBehaviour
+        +combo_item : ItemType | None
+        +second_combo_item : ItemType | None
+        +uses : int | None
+        +item_type : ItemType
+        __init__(self, item_type: ItemType)
+        +action(self) -> AbstractItemBehaviour
+    }
+
+    enum ItemType {
+        Oil,
+        Gasoline,
+        BoardWNail,
+        CanOfSoda,
+        GrislyFemur,
+        GolfClub,
+        Candle,
+        Chainsaw,
+        Machete
+    }
+
+    abstract class AbstractItemBehaviour {
+        +{abstract} action(self)
+    }
+
+    class NegativeItemBehaviour extends AbstractItemBehaviour {
+        +damage : int
+        __init__(self, damage: int)
+        +action(self) -> int
+    }
+
+    class PassiveItemBehaviour extends AbstractItemBehaviour {
+        +action(self) -> None
+    }
+
+    class PositiveItemBehaviour extends AbstractItemBehaviour {
+        +health : int
+        __init__(self, health: int)
+        +action(self) -> int
+    }
+}
+
+package cards <<Folder>> #DDDDDD {
+    class Card {
+        +time_actions : list[TimeAction]
+        __init__(self, time_actions: list[TimeAction])
+        +get_time_action(self, time: int) -> TimeAction
+    }
+
+    class CardManager {
+        #_card_deck : list[Card]
+        __init__(self)
+        +add_card(self, item: ItemType) -> None
+        +add_all_cards(self) -> None
+        +get_deck(self) -> list[Card]
+    }
+
+    class TimeAction {
+        +time : int
+        +time_behaviour : AbstractTimeBehaviour
+        __init__(self, time: int, time_behaviour: AbstractTimeBehaviour)
+        __eq__(self, other) -> bool
+    }
+
+    abstract class AbstractTimeBehaviour {
+        +message : str
+        __init__(self, message: str)
+        {abstract}+action(self)
+    }
+
+    class GoodTimeBehaviour extends AbstractTimeBehaviour {
+        +health : int
+        __init__(self, message: str, health: int)
+        +action(self) -> int
+    }
+
+    class BadTimeBehaviour extends AbstractTimeBehaviour {
+        +damage : int
+        __init__(self, message: str, damage: int)
+        +action(self) -> int
+    }
+
+    class NeutralTimeBehaviour extends AbstractTimeBehaviour {
+        __init__(self, message: str)
+        +action(self) -> str
+    }
+
+
+}
+
+Main *- - Game
+Main *- - CardManager
+Main *- - PickleManager
+Main *- - Parser
+Main *- - Player
+Game *- - Player
+Game *- - Card
+Game *- - Tile
+Game *- - Level
+Game *- - TilePosition
+Game *- - Door
+Player *- - Item
+Level *- - Tile
+Level *- - TilePosition
+Level *- - Player
+Tile *- - AbstractTileBehaviour
+Tile *- - TileType
+Tile *- - AbstractTileSide
+Tile *- - RotationDirection
+Tile *- - TilePosition
+AbstractTileSide *- - TilePosition
+Door *- TilePosition
+Wall *- TilePosition
+EvilTempleBehaviour *- - Item
+CardManager *- Card
+CardManager *- - ItemType
+Card *- - TimeAction
+TimeAction *- - AbstractTimeBehaviour
+Item *- - AbstractItemBehaviour
+Item *- - ItemType
+@enduml
+
+PlantUML version 1.2022.1(Wed Feb 02 07:19:58 NZDT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

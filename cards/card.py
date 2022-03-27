@@ -10,7 +10,7 @@ class Card:
         else:
             raise Exception("Cannot add more than 3 time actions to the list")
 
-    def get_time_action(self, time: int):
+    def get_time_action(self, time: int) -> TimeAction:
         for action in self.time_actions:
             if action.time == time:
                 return action

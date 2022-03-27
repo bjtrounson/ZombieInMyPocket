@@ -11,3 +11,4 @@ class ItemType(Enum):
     Candle = 7
     Chainsaw = 8
     Machete = 9
+    Totem = 10
