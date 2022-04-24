@@ -3,6 +3,7 @@ from cards.card import Card
 from cards.good_time_behaviour import GoodTimeBehaviour
 from cards.item_time_behaviour import ItemTimeBehaviour
 from cards.neutral_time_behaviour import NeutralTimeBehaviour
+from cards.passive_bad_time_behaviour import PassiveBadTimeBehaviour
 from cards.time_action import TimeAction
 from items.item import Item
 from items.item_type import ItemType
@@ -25,7 +26,7 @@ class CardManager:
                 self._cards_deck.append(card)
             case ItemType.Gasoline:
                 time_actions = [TimeAction(9, BadTimeBehaviour(4, "4 Zombies")),
-                                TimeAction(10, BadTimeBehaviour(1, "You sense your impending doom. -1 Health")),
+                                TimeAction(10, PassiveBadTimeBehaviour(1, "You sense your impending doom. -1 Health")),
                                 TimeAction(11, ItemTimeBehaviour("ITEM", Item(ItemType.Gasoline))),
                                 ]
                 card = Card(time_actions)
@@ -33,13 +34,13 @@ class CardManager:
             case ItemType.BoardWNail:
                 time_actions = [TimeAction(9, ItemTimeBehaviour("ITEM", Item(ItemType.BoardWNail))),
                                 TimeAction(10, BadTimeBehaviour(4, "4 Zombies")),
-                                TimeAction(11, BadTimeBehaviour(1, "Something icky in your mouth. -1 Health")),
+                                TimeAction(11, PassiveBadTimeBehaviour(1, "Something icky in your mouth. -1 Health")),
                                 ]
                 card = Card(time_actions)
                 self._cards_deck.append(card)
             case ItemType.Machete:
                 time_actions = [TimeAction(9, BadTimeBehaviour(4, "4 Zombies")),
-                                TimeAction(10, BadTimeBehaviour(1, "A bat poops in your eye. -1 Health")),
+                                TimeAction(10, PassiveBadTimeBehaviour(1, "A bat poops in your eye. -1 Health")),
                                 TimeAction(11, BadTimeBehaviour(6, "6 Zombies")),
                                 ]
                 card = Card(time_actions)
@@ -47,12 +48,12 @@ class CardManager:
             case ItemType.GrislyFemur:
                 time_actions = [TimeAction(9, ItemTimeBehaviour("ITEM", Item(ItemType.GrislyFemur))),
                                 TimeAction(10, BadTimeBehaviour(5, "5 Zombies")),
-                                TimeAction(11, BadTimeBehaviour(1, "Your soul isn't wanted here")),
+                                TimeAction(11, PassiveBadTimeBehaviour(1, "Your soul isn't wanted here")),
                                 ]
                 card = Card(time_actions)
                 self._cards_deck.append(card)
             case ItemType.GolfClub:
-                time_actions = [TimeAction(9, BadTimeBehaviour(1, "Slip on nasty goo. -1 Health")),
+                time_actions = [TimeAction(9, PassiveBadTimeBehaviour(1, "Slip on nasty goo. -1 Health")),
                                 TimeAction(10, BadTimeBehaviour(4, "4 Zombies")),
                                 TimeAction(11, NeutralTimeBehaviour("The smell of blood is in the air")),
                                 ]

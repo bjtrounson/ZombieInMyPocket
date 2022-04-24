@@ -8,7 +8,7 @@ class AbstractTileSide(ABC):
     def __init__(self, tile_side: TilePosition):
         self.original_tile_side = tile_side
 
-    def get_tile_side(self):
+    def get_tile_side(self) -> TilePosition:
         return self.original_tile_side
 
     def __eq__(self, other):

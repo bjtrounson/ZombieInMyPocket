@@ -7,74 +7,123 @@ skinparam pageExternalColor gray
 skinparam pageBorderColor black
 
 together {
-  class Main {
+    class Commands {
         #_game : Game
-        #_player : Player
         #_card_manager : CardManager
-        #_pickle_manager: PickleManager
+        #_pickle_manager : PickleManager
+        #_file_manager : FileManager
+        #_game_options : GameOptions
         __init__(self)
-        +do_help(self, args) -> bool | None
-        +quit(self, args) -> bool
-        +player_health(self, args) -> None
-        +player_attack(self, args) -> None
-        +stats(self, args) -> None
-        +rename(self, args) -> Any
-        +save_game(self, args) -> None
-        +load_game(self, args) -> None
-        +default(self, args) -> bool
+        +preloop(self) -> None
+        +do_game_info(self, args) -> None
+        +do_next_turn(self, args) -> None
+        +do_cower(self, args) -> None
+        +do_save_game_options(self, file_name: str) -> None
+        +do_load_game_options(self, file_name: str) -> None
+        +do_save_game(self, file_name: str) -> None
+        +do_load_game(self, file_name: str) -> None
+        +help_game_info(self) -> None
+        +help_next_turn(self) -> None
+        +help_cower(self) -> None
+        +help_save_game_options(self) -> None
+        +help_load_game_options(self) -> None
+        +help_save_game(self) -> None
+        +help_load_game(self) -> None
+        +do_EOF(self, line)
     }
 
+    class GameOptions {
+        player_health : int
+        player_damage : int
+        player_item_limit : int
+        game_start_time : int
+        game_end_time : int
+    }
 
     class Parser {
         args = str
+        parser: ArgumentParser
         __init__(self)
+        +add_args(self) -> None
     }
 
     class PickleManager {
         #_current_dir
-        __init__(self)
+        __init__(self, cwd: str)
         +serialize_object_to_file(self, file_name: str, obj: Game) -> None
         +deserialize_file_to_object(self, file_name: str) -> Game
         +remove_save(self, file_name: str) -> None
         +get_current_dir(self) -> str
     }
 
+    class FileManager {
+        #_current_dir
+        __init__(self, cwd: str)
+        +serialize_game_options_to_json(self, file_name: str, game_options: GameOptions) -> None
+        +deserialize_json_to_game_options(self, file_name: str) -> GameOptions
+        +extract_intro_text(self) -> str
+    }
+
     class Game {
         #_time: int
+        #_end_time: int
         #_inside_tiles: list[Tile]
         #_outside_tiles: list[Tile]
         #_dev_cards: list[Card]
-        #_current_dev_cards: list[Card]
         #_current_dev_card: Card | None
+        #_card_manager: CardManager
         #_level: Level
-        __init__(self, time: int, level: Level, dev_cards: list[Card])
+        __init__(self, start_time: int, end_time: int, level: Level)
         +setup() -> None
         +{static} shuffle_decks(deck: list[Card | Tile]) -> list[Card | Tile]
         +draw_tile(self) -> Tile
+        +setup_dev_cards(self) -> None
+        +draw_dev_card(self) -> None
         +move(self, entry_door: Door, exit_door: Door, new_tile: Tile) -> None
+        +movement_algorithm(self, player_pos_x: float, player_pos_y: float, new_tile: Tile, exit_door: Door) -> Any
+        +create_zombie_door(self, tile: Tile, exit_door: Door) -> None
         +{static}correct_tile_rotation(correct_door_position: TilePosition, new_tile: Tile, exit_door: Door) -> Tile
         +{static}get_tile_doors(tile: Tile) -> list[Door]
         +tile_algorithm(self, new_tile: Tile) -> bool
         #_get_index_of_tile(self, target_tile: Tile) -> int
-        +pickup_item()
+        +pickup_item(self, item: Item) -> Any
+        +replace_item(self, item: Item) -> Any
+        +available_replaceable_items(self) -> Item
         +attack(self, zombie_count: int, attack_score: int) -> None
         +cower(self) -> None
+        +activate_time_action(self, card: Card) -> None
+        #_bad_time_behaviour(self, time_behaviour: AbstractTimeBehaviour) -> Any
+        +runaway(self) -> None
+        +{static}runaway_tile_input() -> int
+        +player_run_away_tiles_available(self) -> list[Tile]
+        +get_door_from_input(self, tile: Tile, new_tile: bool) -> Door
+        +get_current_tile(self) -> Tile
+        +get_current_dev_card(self) -> Card
+        +get_player_from_level(self) -> Player
+        +set_game_start_time(self, start_time: int) -> None
+        +set_game_end_time(self, end_time: int) -> None
     }
 
     class Player {
-        #_health : int
-        #_attack : int
-        #_player_items : list[Item]
-        #_inside : bool
-        #_x : float
-        #_y : float
-        __init__(self, health: int, attack: int, player_items: list[Item], x: float, y: float)
+        #_health: int
+        #_attack: int
+        #_item_limit: int
+        #_player_items: list[Item]
+        #_inside: bool
+        #_x: float
+        #_y: float
+        __init__(self, health: int, attack: int, item_limit: int, player_items: list[Item], x: float, y: float)
         +get_x(self) -> float
         +get_y(self) -> float
         +get_health(self) -> int
         +get_is_inside(self) -> bool
         +get_attack_score(self) -> int
+        +get_items(self) -> list[Item]:
         +set_health(self) -> None
+        +add_item(self, item: Item) -> None
+        +replace_item(self, item_to_replace: Item, item: Item) -> None
+        +set_attack_score(self, attack_score: int) -> None
+        +set_item_limit(self, item_limit: int) -> None
         +set_player_pos(self, x: float, y: float) -> None
     }
 
@@ -83,9 +132,11 @@ together {
             #_tiles : list[Tile]
             #_player : Player
             __init__(self, tiles: list[Tile], player: Player)
-            +add_new_tile(self, tile: Tile)
+            +add_new_tile(self, tile: Tile) -> None
             +check_if_tile_already_exists(self, x: float, y: float) -> bool
-            +heck_if_door_exist_near_cords(self, x: float, y: float) -> bool
+            +check_if_door_exist_near_cords(self, x: float, y: float) -> bool
+            +get_available_doors(self, tile: Tile) -> list[Door]
+            +{static}get_walls_on_tile(tile: Tile) -> list[Wall]
             +{static}get_door_info_on_tile(tile: Tile) -> [dict[int, TilePosition]]
             +get_tile_player_is_on(self) -> Tile
             +get_tile_by_cords(self, x: float, y: float) -> Tile | bool
@@ -289,11 +340,15 @@ package cards <<Folder>> #DDDDDD {
 
 }
 
-Main *-- Game
-Main *-- CardManager
-Main *-- PickleManager
-Main *-- Parser
-Main *-- Player
+Main *-- Commands
+Commands *-- Game
+Commands *-- CardManager
+Commands *-- PickleManager
+Commands *-- Parser
+Commands *-- Player
+Commands *-- FileManager
+Commands *-- GameOptions
+FileManager *-- GameOptions
 Game *-- Player
 Game *-- Card
 Game *-- Tile

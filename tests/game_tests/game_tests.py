@@ -23,12 +23,11 @@ class GameTestCases(unittest.TestCase):
                                    Tile(TileType.Yard3, 0, 0), Tile(TileType.Graveyard, 0, 0),
                                    Tile(TileType.SittingArea, 0, 0), Tile(TileType.Garden, 0, 0),
                                    Tile(TileType.Garage, 0, 0)]
-        dev_cards: list[Card] = self.card_manager.get_deck()
         tiles: list[Tile] = [Tile(TileType.Foyer, 0, 0)]
-        player: Player = Player(6, 1, [], 0, 0)
+        player: Player = Player(6, 1, 2, [], 0, 0)
         level = Level(tiles, player)
         self.new_tile: Tile = Tile(TileType.EvilTemple, 0, 1)
-        self.game = Game(9, level, dev_cards)
+        self.game = Game(9, 11, level)
 
     def test_when_new_tile_given_expect_new_tiles_doors_available(self):
         expected_doors: list[Door] = [Door(TilePosition.East), Door(TilePosition.West)]
