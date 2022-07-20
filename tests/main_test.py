@@ -6,6 +6,7 @@ from tests.item_tests.item_tests import ItemTestCases
 from tests.pickle_manager_tests.pickle_manager_tests import PickleManagerTestCases
 from tests.tile_tests.tile_tests import TileTestCases
 from tests.level_tests.level_tests import LevelTestCases
+from tests.command_tests import CommandsTestCases
 
 if __name__ == '__main__':
     CardTestCases()
@@ -14,4 +15,5 @@ if __name__ == '__main__':
     LevelTestCases()
     GameTestCases()
     PickleManagerTestCases()
+    CommandsTestCases()
     doctest.testmod()
