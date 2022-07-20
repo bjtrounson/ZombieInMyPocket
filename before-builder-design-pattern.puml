@@ -1,0 +1,48 @@
+@startuml
+skinparam groupInheritance 2
+' Split into 4 pages
+skinparam groupInheritance 2
+skinparam style strictuml
+hide empty members
+page 2x2
+skinparam pageMargin 10
+skinparam pageExternalColor gray
+skinparam pageBorderColor black
+
+class Game {
+    #_time: int
+    #_end_time: int
+    #_inside_tiles: list[Tile]
+    #_outside_tiles: list[Tile]
+    #_dev_cards: list[Card]
+    #_current_dev_card: Card | None
+    #_card_manager: CardManager
+    #_level: Level
+    __init__(self, start_time: int, end_time: int, level: Level)
+}
+
+class Tile {
+    +tile_name : str
+    +tile_type : TileType
+    +tile_behaviour : AbstractTileBehaviour
+    #_tile_sides : list[AbstractTileSide]
+    #_x : float
+    #_y : float
+    __init__(self, tile_type: TileType, x: float, y: float)
+}
+
+class Card {}
+
+class CardManager {
+    #_card_deck : list[Card]
+    __init__(self)
+    +add_card(self, item: ItemType) -> None
+    +add_all_cards(self) -> None
+    +get_deck(self) -> list[Card]
+}
+
+Game *-- Card
+Game *-- CardManager
+Game *-- Tile
+CardManager *- Card
+@enduml

@@ -1,0 +1,89 @@
+@startuml
+skinparam groupInheritance 2
+skinparam groupInheritance 2
+skinparam style strictuml
+hide empty members
+
+class CardManager {
+  #_builder: GameObjectBuilder
+  #_cards_deck: list[Card]
+  __init__(self)
+  +add_all_cards(self)
+  +get_deck(self) -> list[Card]
+}
+
+class TileManager {
+  #_builder: GameObjectBuilder
+  #_inner_tile_deck: list[Tile]
+  #_outer_tile_deck: list[Tile]
+  __init__(self)
+  +add_inner_tiles(self)
+  +add_outer_tiles(self)
+  +get_inner_tile_deck(self) -> list[Tile]
+  +get_outer_tile_deck(self) -> list[Tile]
+}
+
+abstract class GameObjectBuilder {
+  {abstract} +build_game_object(ObjectType)
+}
+
+class CardBuilder extends GameObjectBuilder {
+  +build_game_object(ObjectType: ItemType)
+  +get_card_object() -> Card
+}
+
+class TileBuilder extends GameObjectBuilder {
+  +build_game_object(ObjectType: TileType)
+  +get_tile_object() -> Tile
+}
+
+class Card {}
+
+class Tile {}
+
+enum TileType {
+  Foyer
+  Bedroom
+  DiningRoom
+  FamilyRoom
+  Bathroom
+  Kitchen
+  Storage
+  EvilTemple
+  Patio
+  Yard1
+  Yard2
+  Yard3
+  Garage
+  SittingArea
+  Garden
+  Graveyard
+}
+
+enum ItemType {
+  Oil
+  Gasoline
+  BoardWNail
+  CanOfSoda
+  GrislyFemur
+  GolfClub
+  Candle
+  Chainsaw
+  Machete
+  Totem
+}
+
+note "for all objectTypes in objectType {\n_builder->build_game_object(objectType)\n}" as ConstructNote
+CardManager::add_all_cards ..left ConstructNote
+TileManager::add_inner_tiles ..right ConstructNote
+TileManager::add_outer_tiles ..right ConstructNote
+
+CardBuilder ..> Card
+TileBuilder ..> Tile
+
+CardBuilder ..> ItemType
+TileBuilder ..> TileType
+
+CardManager *-- GameObjectBuilder
+TileManager *-- GameObjectBuilder
+@enduml

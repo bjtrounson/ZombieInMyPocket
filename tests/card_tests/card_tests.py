@@ -1,5 +1,6 @@
 import unittest
 from cards.card import Card
+from cards.card_manager import CardManager
 from cards.time_action import TimeAction
 from cards.neutral_time_behaviour import NeutralTimeBehaviour
 from cards.item_time_behaviour import ItemTimeBehaviour
@@ -70,6 +71,11 @@ class CardTestCases(unittest.TestCase):
         expected_health = 1
         actual_health = card.get_time_action(11).time_behaviour.action()
         self.assertEqual(expected_health, actual_health)
+
+    def test_when_card_manager_add_all_cards_creates_cards(self):
+        card_manager = CardManager()
+        card_manager.add_all_cards()
+        self.assertIsInstance(card_manager.get_deck(), list)
 
 
 if __name__ == '__main__':

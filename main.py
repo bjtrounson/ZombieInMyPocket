@@ -1,6 +1,6 @@
-from commands import Commands
+from interpreter import Interpreter
 
 if __name__ == '__main__':
-    interpreter = Commands()
+    interpreter = Interpreter()
     interpreter.prompt = "ZIMP -> "
     interpreter.cmdloop()

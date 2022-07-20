@@ -1,0 +1,78 @@
+@startuml
+skinparam groupInheritance 2
+skinparam style strictuml
+hide empty members
+class Command {
+    #_game: Game
+    #_card_manager: CardManager
+    #_pickle_manager: PickleManager
+    #_file_manager: FileManager
+    #_game_options: GameOptions
+    __init__(self)
+}
+
+class HelpCommands extends Command {
+    +help_game_info(self) -> None
+    +help_next_turn(self) -> None
+    +help_cower(self) -> None
+    +help_save_game_options(self) -> None
+    +help_load_game_options(self) -> None
+    +help_save_game(self) -> None
+    +help_load_game(self) -> None
+}
+
+class GameCommands extends Command {
+    +do_game_info(self, args) -> None
+    +do_next_turn(self, args) -> None
+    +do_cower(self, args) -> None
+}
+
+class FileCommands extends Command {
+    +do_save_game_options(self, file_name: str) -> None
+    +do_load_game_options(self, file_name: str) -> None
+    +do_save_game(self, file_name: str) -> None
+    +do_load_game(self, file_name: str) -> None
+}
+
+class Interpreter extends HelpCommands, GameCommands, FileCommands {
+    +preloop(self) -> None
+    +do_EOF(self, line)
+}
+
+class Game {
+    __init__(self, start_time: int, end_time: int, level: Level)
+    +draw_tile(self) -> Tile
+    +draw_dev_card(self) -> None
+    +move(self, entry_door: Door, exit_door: Door, new_tile: Tile) -> None
+    +cower(self) -> None
+    +activate_time_action(self, card: Card) -> None
+    +get_door_from_input(self, tile: Tile, new_tile: bool) -> Door
+    +get_current_tile(self) -> Tile
+    +get_current_dev_card(self) -> Card
+    +get_player_from_level(self) -> Player
+}
+
+
+together {
+    class PickleManager
+    class FileManager
+}
+
+together {
+    class CardManager
+    class GameOptions
+}
+
+together {
+    class Parser
+    class Player
+}
+
+Main *- Interpreter : interpreter
+Command *- Game
+Command *- (PickleManager, FileManager)
+Command *- (GameOptions, CardManager)
+Command *- (Player, Parser) : player, parser
+FileCommands -right[hidden]- HelpCommands
+HelpCommands -right[hidden]- GameCommands
+@enduml

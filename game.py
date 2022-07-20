@@ -4,12 +4,12 @@ from cards.abstract_time_behaviour import AbstractTimeBehaviour
 from cards.bad_time_behaviour import BadTimeBehaviour
 from cards.card import Card
 from cards.card_manager import CardManager
-from cards.time_action import TimeAction
 from items.item import Item
 from level.level import Level, NoDoorNearError, TileExistsError
 from player import Player
 from tiles.door import Door
 from tiles.tile import Tile, RotationDirection
+from tiles.tile_manager import TileManager
 from tiles.tile_positions import TilePosition
 from tiles.tile_type import TileType
 
@@ -26,6 +26,7 @@ class Game:
     _dev_cards: list[Card]
     _current_dev_card: Card | None
     _card_manager: CardManager
+    _tile_manager: TileManager
     _level: Level
 
     def __init__(self, start_time: int, end_time: int, level: Level):
@@ -33,17 +34,14 @@ class Game:
         self._end_time = end_time
         self._level = level
         self._card_manager = CardManager()
+        self._tile_manager = TileManager()
         self._current_dev_card = None
         self._dev_cards = []
-        self._inside_tiles = [Tile(TileType.Bedroom, 0, 0), Tile(TileType.DiningRoom, 0, 0),
-                              Tile(TileType.EvilTemple, 0, 0), Tile(TileType.Storage, 0, 0),
-                              Tile(TileType.Kitchen, 0, 0), Tile(TileType.Bathroom, 0, 0),
-                              Tile(TileType.FamilyRoom, 0, 0)]
-        self._outside_tiles = [Tile(TileType.Yard1, 0, 0), Tile(TileType.Yard2, 0, 0),
-                               Tile(TileType.Yard3, 0, 0), Tile(TileType.Graveyard, 0, 0),
-                               Tile(TileType.SittingArea, 0, 0), Tile(TileType.Garden, 0, 0),
-                               Tile(TileType.Garage, 0, 0)]
         self._card_manager.add_all_cards()
+        self._tile_manager.add_inner_tiles()
+        self._tile_manager.add_outer_tiles()
+        self._inside_tiles = self._tile_manager.get_inner_tile_deck()
+        self._outside_tiles = self._tile_manager.get_outer_tile_deck()
         self.setup()
 
     def setup(self):
@@ -332,7 +330,6 @@ class Game:
 
     def attack(self, zombie_count: int, attack_score: int):
         """
-
         :param zombie_count: int
         :param attack_score: int
         :return:

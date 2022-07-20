@@ -1,0 +1,39 @@
+@startuml
+skinparam groupInheritance 2
+skinparam style strictuml
+hide empty members
+class Commands {
+    #_game : Game
+    #_card_manager : CardManager
+    #_pickle_manager : PickleManager
+    #_file_manager : FileManager
+    #_game_options : GameOptions
+    __init__(self)
+    +preloop(self) -> None
+    +do_game_info(self, args) -> None
+    +do_next_turn(self, args) -> None
+    +do_cower(self, args) -> None
+    +do_save_game_options(self, file_name: str) -> None
+    +do_load_game_options(self, file_name: str) -> None
+    +do_save_game(self, file_name: str) -> None
+    +do_load_game(self, file_name: str) -> None
+    +help_game_info(self) -> None
+    +help_next_turn(self) -> None
+    +help_cower(self) -> None
+    +help_save_game_options(self) -> None
+    +help_load_game_options(self) -> None
+    +help_save_game(self) -> None
+    +help_load_game(self) -> None
+    +do_EOF(self, line)
+}
+
+Main *-- Commands
+Commands *-- Game
+Commands *-- CardManager
+Commands *-- PickleManager
+Commands *-- Parser
+Commands *-- Player
+Commands *-- FileManager
+Commands *-- GameOptions
+
+@enduml

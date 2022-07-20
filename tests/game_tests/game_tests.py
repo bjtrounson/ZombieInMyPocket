@@ -1,5 +1,6 @@
 import unittest
 
+from builders.tile_builder import TileBuilder
 from cards.card import Card
 from cards.card_manager import CardManager
 from game import Game
@@ -7,6 +8,7 @@ from level.level import Level
 from player import Player
 from tiles.door import Door
 from tiles.tile import Tile
+from tiles.tile_manager import TileManager
 from tiles.tile_positions import TilePosition
 from tiles.tile_type import TileType
 
@@ -14,20 +16,32 @@ from tiles.tile_type import TileType
 class GameTestCases(unittest.TestCase):
     def setUp(self) -> None:
         self.card_manager: CardManager = CardManager()
+        self.tile_manager: TileManager = TileManager()
+        self.tile_builder: TileBuilder = TileBuilder()
+        self.tile_manager.add_inner_tiles()
+        self.tile_manager.add_outer_tiles()
         self.card_manager.add_all_cards()
-        self.mock_inside_tiles: list[Tile] = [Tile(TileType.Bedroom, 0, 0), Tile(TileType.DiningRoom, 0, 0),
-                                              Tile(TileType.EvilTemple, 0, 0), Tile(TileType.Storage, 0, 0),
-                                              Tile(TileType.Kitchen, 0, 0), Tile(TileType.Bathroom, 0, 0),
-                                              Tile(TileType.FamilyRoom, 0, 0)]
-        self.mock_outside_tiles = [Tile(TileType.Yard1, 0, 0), Tile(TileType.Yard2, 0, 0),
-                                   Tile(TileType.Yard3, 0, 0), Tile(TileType.Graveyard, 0, 0),
-                                   Tile(TileType.SittingArea, 0, 0), Tile(TileType.Garden, 0, 0),
-                                   Tile(TileType.Garage, 0, 0)]
-        tiles: list[Tile] = [Tile(TileType.Foyer, 0, 0)]
+        self.mock_inside_tiles: list[Tile] = self.tile_manager.get_inner_tile_deck()
+        self.mock_outside_tiles = self.tile_manager.get_outer_tile_deck()
+        self.tile_builder.build_game_object(TileType.Foyer)
+        tiles: list[Tile] = [self.tile_builder.get_tile_object()]
         player: Player = Player(6, 1, 2, [], 0, 0)
         level = Level(tiles, player)
-        self.new_tile: Tile = Tile(TileType.EvilTemple, 0, 1)
+        self.tile_builder.build_game_object(TileType.EvilTemple)
+        self.tile_builder.get_tile_object().set_pos(0, 1)
+        self.new_tile: Tile = self.tile_builder.get_tile_object()
         self.game = Game(9, 11, level)
+
+    def test_when_new_game_create_new_game(self):
+        player: Player = Player(6, 1, 2, [], 0, 0)
+        level = Level([Tile(TileType.Foyer, 0, 0)], player)
+        game = Game(9, 11, level)
+        self.assertEqual(game._time, 9)
+        self.assertEqual(game._end_time, 11)
+        self.assertEqual(game._level, level)
+        self.assertIsInstance(game._card_manager, CardManager)
+        self.assertIsInstance(game._current_dev_card, Card)
+        self.assertIsInstance(game._dev_cards, list)
 
     def test_when_new_tile_given_expect_new_tiles_doors_available(self):
         expected_doors: list[Door] = [Door(TilePosition.East), Door(TilePosition.West)]
